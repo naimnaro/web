@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Add link to import the Poppins font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .portfolio-item {
+            width: 90%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .box_intro {
+            margin-top: 30px;
+            width: 100%;
+            height: 2000px;
+            display: grid;
+            place-items: center; /* 수평, 수직 가운데 정렬 */
+            background-color: #444444;
+            box-shadow: 0 0 10px rgba(5, 5, 5, 0.819);
+           
+            
+            
+        }
+
+        .b1,
+        .b2,
+        .b3,
+        .b4,
+        .b5 {
+            width: 90%;
+            height: auto;
+           
+            
+            background-color: #2e2e2ed5;
+           
+            
+            box-shadow: 0 0 5px rgba(5, 5, 5, 0.808);
+            align-self: center; /* 수직 가운데 정렬 */
+            border-radius: 0;
+            border: 1px solid #000000a9;
+        }
+
+        .b1 {
+            
+        
+            height: 300px;
+            order: -1; /* .b1을 1번째로 표시 */
+            border-radius: 0;
+            
+            
+           
+        }
+        
+        .b1 p {
+        font-size: 20px !important;
+        margin-left: 30px; /* 원하는 마진 값으로 조정 */
+        text-align: center; /* 텍스트를 왼쪽 정렬로 설정 */
+        align-self: center;
+        }
+
+        .b2 {
+            margin-top: -60px;
+            height: 300px;
+            order: 1; /* .b1을 2번째로 표시 */
+            border-radius: 0;
+            border: 2px solid #000000;
+            background-image: url("./images/labyrinth_projects_banner.png");
+            background-size:cover;
+        }
+        .b2 p {
+        font-size: 30px  !important;
+        margin-left: 30px; /* 원하는 마진 값으로 조정 */
+        text-align: left; /* 텍스트를 왼쪽 정렬로 설정 */
+        }
+        .b3 {  
+            margin-top: -60px;
+            height: 300px;
+            order: 2; /* .b1을 2번째로 표시 */
+            border-radius: 0;
+        }
+        .b3 p {
+        font-size: 20px  !important;
+        margin-left: 20px; /* 원하는 마진 값으로 조정 */
+        text-align: left; /* 텍스트를 왼쪽 정렬로 설정 */
+        }
+        .b4 {  
+            margin-top: -60px;
+            height: 300px;
+            order: 2; /* .b1을 2번째로 표시 */
+            border-radius: 0;
+        }
+        .b4 p {
+        font-size: 20px  !important;
+        margin-left: 20px; /* 원하는 마진 값으로 조정 */
+        text-align: left; /* 텍스트를 왼쪽 정렬로 설정 */
+        }
+        .b5 {  
+            margin-top: -60px;
+            height: 300px;
+            order: 2; /* .b1을 2번째로 표시 */
+            border-radius: 0;
+        }
+        .b5 p {
+        font-size: 20px  !important;
+        margin-left: 20px; /* 원하는 마진 값으로 조정 */
+        text-align: left; /* 텍스트를 왼쪽 정렬로 설정 */
+        }
+
+        .b_icon{
+            width: calc(100%); /* 50%의 너비에서 10px 여백을 뺀 크기로 설정 */
+            height: 100px;
+            border: 1px solid #000000;
+            background-color: #444444;
+            box-sizing: border-box; /* box-sizing 추가 */
+            margin-bottom: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            box-shadow: 0 0 5px rgba(5, 5, 5, 0.66);
+            
+        }
+       
+       
+
+        .blog-image {
+            max-width: 400px;
+            height:300px;
+            margin-top: 0px;
+            margin-right: 30px;
+            border: 2px solid #000000; /* 이미지에 테두리 추가 */
+            box-shadow: 0 0 10px rgb(5, 5, 5);
+            float: right;
+            opacity: .7;
+            
+        }
+
+       
+
+        .blog-image2 {
+            margin-top: 10px;
+            max-width: 80px;
+            height: 80px;
+            border: 3px solid #c1c1c1; /* 이미지에 테두리 추가 */
+            border-radius: 50%; /* 동그라미 모양으로 테두리 설정 */
+            overflow: hidden; /* 필요한 경우 이미지가 테두리를 벗어나지 않도록 처리 */
+            box-shadow: 0 0 5px rgb(5, 5, 5);
+        }
+
+        .blog-image3 {
+            max-width: 50px;
+            height: 50px;
+            margin: 10px; 
+        }
+
+        .b_icon .social-icons {
+            display: flex;
+            margin: 10px;
+        }
+
+        .content-area{ 
+            background: #2f2f2f;
+            height : 1000px;
+        }
+        .content-area h2{
+            font-size: 30px;
+            margin-left: 80px;
+            padding-top: 30px;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312); /* 가로, 세로, 흐림 정도, 색상 조절 */
+            color : #ffffff;;
+            font-style: Arial;
+            text-align: left;
+        }
+        .content-area h3{
+            font-style: Arial;
+            font-size: 30px;
+            margin : 0;
+            padding-top: 30px;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.373); /* 가로, 세로, 흐림 정도, 색상 조절 */
+            color : #ffffff;
+        }
+        .content-area p{
+            padding: 2% 0;
+            line-height: 35px;
+            text-align: justify;
+            font-size: 20px;
+            color : #ffffff;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171); /* 가로, 세로, 흐림 정도, 색상 조절 */
+    
+        }
+        .banner-area{
+            background-image: url("./images/night_sky1.gif");
+            background-size: cover;
+            background-position: center;
+            top: 100px;
+            height: 100vh;
+            width : 100%;
+            
+    
+            position :fixed;
+        }
+        .content-area{     /*메인 */
+            width : 100%;
+            height : 2250px;
+            position : relative;
+            /* background: url('./images/bg1.png');*/
+            background-color: #00000000;
+            background-size: cover;
+            
+            
+            top : 400px;
+
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="box_area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#"> <img src="./images/image1.png" alt="이미지1" class="blog-image2"> </a>
+                </div>
+                <nav> 
+                    <a href="index.html"> Home </a>
+                    <a href="intro.html"> Intro </a>
+                    <a href="projects.html"> Projects </a>
+                    <a href="hobby.html"> Hobby </a>
+                    <a href="#"> Blog </a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner-area">
+            <h2> Lee Jung Pyo's_Diary </h2>
+        </div>
+
+        <div class="content-area">    
+            <h2>projects</h2>   
+            <div class="wrapper">
+                <div class="box_intro"> 
+                    <div class="b1">                      
+                        <p>  
+                            현재 진행중인/완성된 프로젝트 입니다.
+                            <br>there are list of projects 
+                        
+                        </p>
+                    </div> 
+                    <div class="b2">                      
+                        <p>  
+                            Main : Labyrinth_
+                            
+                        </p>
+                    </div>
+                    <div class="b3">                      
+                        <p>  
+                            
+                            Main : App_board
+                        </p>
+                    </div>
+                    <div class="b4">                      
+                        <p>  
+                            
+                            Sub : web_board
+                        </p>
+                    </div>
+                    <div class="b5">                      
+                        <p>  
+                            
+                            Toy : 
+                        </p>
+                    </div>
+                   
+                </div> 
+                <div class="portfolio-item"> 
+                    <div class="b_icon">                       
+                        <p>  
+                            <div class="social-icons"></div>
+                            <img src="./images/instagram.png" alt="이미지1" class="blog-image3">
+                            <img src="./images/twitter.png" alt="이미지1" class="blog-image3">
+                            <img src="./images/youtube.png" alt="이미지1" class="blog-image3">
+                            <img src="./images/solved.png" alt="이미지1" class="blog-image3">
+                        </p>
+                    </div>             
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
