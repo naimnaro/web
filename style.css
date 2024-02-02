@@ -58,7 +58,7 @@ nav a:hover{
     color : black;
 }
 .banner-area{
-    background-image: url("./images/image4.png");
+    background-image: url("../images/image4.png");
     background-size: cover;
     background-position: center;
     top: 100px;
