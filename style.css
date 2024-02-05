@@ -7,11 +7,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    background-color: #000000;
 }
 
 .wrapper {
     width: 90%;
     margin: 0 auto;
+   
 }
 
 header {
@@ -20,8 +22,20 @@ header {
     background: linear-gradient(to bottom, #242424, #2f2f2f, #292929);
     position: fixed;
     z-index: 2;
+
+}
+.blog-image2{
+    margin-top: 10px;
+    max-width: 80px;
+    height: 80px;
+    border: 3px solid #c1c1c1; /* 이미지에 테두리 추가 */
+   
+    border-radius: 50%; /* 동그라미 모양으로 테두리 설정 */
+    overflow: hidden; /* 필요한 경우 이미지가 테두리를 벗어나지 않도록 처리 */
+    box-shadow: 0 0 10px rgb(5, 5, 5);
     
 }
+
 
 .logo {
     width: 30%;
@@ -65,9 +79,8 @@ nav a:hover{
     height: 100vh;
     width : 100%;
     position :fixed;
-    
-
 }
+
 .banner-area:after{
     content: '';
     position : absolute;
@@ -127,6 +140,110 @@ nav a:hover{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171); /* 가로, 세로, 흐림 정도, 색상 조절 */
     
 }
+
+@media (max-width: 800px) {
+
+    .banner-area h2 {
+        font-size: 20px;
+    }
+    .blog-image2 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        max-width: 50px;
+        height: 50px;
+
+        
+    }
+
+    .content-area {
+        top: 200px;
+    }
+    .content-area p{
+        font-size: 15px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.171); /* 가로, 세로, 흐림 정도, 색상 조절 */
+        
+    }
+    .content-area h2{
+        font-size: 20px;
+        margin : 0;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px rgba(2, 2, 2, 0.312); /* 가로, 세로, 흐림 정도, 색상 조절 */
+        color : #474747;;
+        font-style: Arial;
+    }
+    .nav{
+        float : right;
+        line-height: 30px;
+        
+    }
+    .nav a{
+        
+        font-size: 5px;
+    
+        
+    }
+    header {
+        width: 100%; /* 화면이 768px 이하일 때 너비를 90%로 변경 */
+        height: 70px;
+       
+    }
+    .logo {
+        width: 0%;
+        float: left;
+        text-align: left;
+        line-height: 100px;
+       
+    }
+    .logo a{
+        text-decoration: none;
+        font-size: 10px;
+        color: #ffffff;
+        font-family:cursive;
+        letter-spacing: 1px;
+        
+    }
+    nav{
+        float : right;
+        line-height: 70px;
+        
+    }
+    nav a{
+       
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Arial';
+        letter-spacing: wpx;
+        padding: 5px;
+        text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
+        
+    }
+    .banner-area{
+        background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif");
+        background-size: cover;
+        background-position: center;
+        top: 50px;
+        height: 50vh;
+        width : 100%;
+        position :fixed;
+    }
+    
+    .banner-area:after{
+        content: '';
+        position : absolute;
+        top : 0;
+        left : 0;
+        display : block;
+        width : 100%;
+        height : 100%;
+        background: #2f2f2f;
+        opacity: .0;
+        z-index: -1;
+    }
+}
+
+
 
 
 
