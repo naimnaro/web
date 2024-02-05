@@ -145,6 +145,7 @@ nav a:hover{
 
     .banner-area h2 {
         font-size: 20px;
+        padding-top : 16%;
     }
     .blog-image2 {
         margin-top: 10px;
@@ -211,20 +212,21 @@ nav a:hover{
     nav a{
        
         text-decoration: none;
-        font-size: 15px;
+        font-size: 8px;
         color: #ffffff;
         font-family: 'Arial';
-        letter-spacing: wpx;
+        
+        letter-spacing: 1px;
         padding: 5px;
         text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
         
     }
     .banner-area{
-        background-color: #000000;
+        background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif");
         background-size: cover;
-        background-position: top;
+        background-position: center;
         top: 50px;
-        height: 50vh;
+        height: 40vh;
         width : 100%;
         position :fixed;
     }
