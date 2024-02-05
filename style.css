@@ -222,7 +222,7 @@ nav a:hover{
     .banner-area{
         background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif");
         background-size: cover;
-        background-position: center;
+        background-position: top;
         top: 50px;
         height: 50vh;
         width : 100%;
