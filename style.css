@@ -227,9 +227,9 @@ nav a:hover{
         background-image: url("images/sunset.jpg");
         /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
         background-size: 100%;
-        background-position: center;
-        top: 50px;
-        height: 40vh;
+        background-position: bottom;
+        top: 7%;
+        height: 30%;
         width : 100%;
         position :fixed;
     }
