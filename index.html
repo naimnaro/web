@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <!-- Add link to import the Poppins font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-    
+
     <link rel="stylesheet" href="style.css">
-    
+
 
     <style>
         .portfolio-item {
@@ -17,217 +18,216 @@
             position: absolute;
             bottom: 0;
         }
-       
 
-       
 
-        .b1{
-            width: calc(100%); /* 50%의 너비에서 10px 여백을 뺀 크기로 설정 */
+
+
+        .b1 {
+            width: calc(100%);
+            /* 50%의 너비에서 10px 여백을 뺀 크기로 설정 */
             height: 500px;
             border: 1px solid #000000;
             background-color: #2c2c2c;
-        
+
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 0 10px rgb(5, 5, 5);
             text-align: center;
 
-            
+
         }
+
         .b1 p {
-            font-size: 30px  !important;
+            font-size: 30px !important;
             color: #ffffff;
-            text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.312); /* 가로, 세로, 흐림 정도, 색상 조절 */
+            text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.312);
+            /* 가로, 세로, 흐림 정도, 색상 조절 */
             /* 텍스트를 왼쪽 정렬로 설정 */
             align-items: center;
             text-align: center;
             margin-top: 50px;
-          
+
         }
+
         .korean-text {
-            font-size: 20px; /* 적절한 크기로 조절 */
-            
-   
+            font-size: 20px;
+            /* 적절한 크기로 조절 */
+
+
         }
+
         .korean-text2 {
-            font-size: 15px; /* 적절한 크기로 조절 */
-            display: block; /* 블록 레벨로 변경 */
+            font-size: 15px;
+            /* 적절한 크기로 조절 */
+            display: block;
+            /* 블록 레벨로 변경 */
             text-align: right !important;
             margin-top: 15px;
             margin-right: 30px;
             color: #ffffffc7 !important;
-            
-           
-    
+
+
+
         }
-        @media (max-width: 600px){
+
+        @media (max-width: 600px) {
+            .b1 {
+                height: 250px;
+            }
+
             .b1 p {
-            font-size: 12px  !important;
-            color: #ffffff;
-            text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312); /* 가로, 세로, 흐림 정도, 색상 조절 */
-            /* 텍스트를 왼쪽 정렬로 설정 */
-            align-items: center;
-            text-align: center;
-            margin-top: 25px;
+                font-size: 12px !important;
+                color: #ffffff;
+                text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312);
+                /* 가로, 세로, 흐림 정도, 색상 조절 */
+                /* 텍스트를 왼쪽 정렬로 설정 */
+                align-items: center;
+                text-align: center;
+                margin-top: 25px;
             }
+            
+
             .korean-text {
-            font-size: 10px; /* 적절한 크기로 조절 */
+                font-size: 10px;
+                /* 적절한 크기로 조절 */
             }
+
             .korean-text2 {
-            font-size: 8px; /* 적절한 크기로 조절 */
+                font-size: 8px;
+                /* 적절한 크기로 조절 */
             }
 
         }
-        .b2{
-            width: calc(100%); /* 50%의 너비에서 10px 여백을 뺀 크기로 설정 */
-            height: 100px;
 
-            border: 1px solid #000000;
-
+        .b2 {
+          
             background-color: #2c2c2c;
 
-            box-sizing: border-box; /* box-sizing 추가 */
-            margin-bottom: 20px;
-            margin-top: 20px;
-            
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            
-            box-shadow: 0 0 10px rgb(5, 5, 5);
-            
         }
-       
-        .p{
+
+        .p {
             font-size: 20px;
         }
+
         .blog-image {
-           
+
             max-width: 1000px;
             height: 250px;
             margin-top: 10px;
             margin-left: 25px;
-			border: 4px solid #666; /* 이미지에 테두리 추가 */
+            border: 4px solid #666;
+            /* 이미지에 테두리 추가 */
             box-shadow: 0 0 10px rgb(5, 5, 5);
-			
+
         }
 
-       
-        .blog-image3{
-           
-          
-           
-            max-width: 50px;
-            height: 50px;
-            margin: 10px; 
-            
-     
-			
-        }
+
+        
+
         .b2 .social-icons {
-           
-           
+
+
             display: flex;
             margin: 10px;
-             /* Pushes the social icons to the right */
-          
+            /* Pushes the social icons to the right */
+
 
         }
-       
-        
     </style>
-   <script>
-    // Array of helpful guidelines
-    const guidelines = [
-    '悪とは何か――弱さから生ずるすべてのものだ。 <br> <span class="korean-text"> 악이란 무엇인가, 나약함이 원인이 된 모든 행동이다. <br> <span class="korean-text2"> -프리드리히 니체- ',
-    'しかし、概して人々が運命と呼ぶものは、大半が自分の愚行にすぎない。 <br> <span class="korean-text"> 하지만 일반적으로 사람들이 운명이라 부르는 것은 태반이 자신의 어리석은 행동에 지나지 않는다. <br> <span class="korean-text2">  -아르투어 쇼펜하우어- ',
-    '困難の中でこそ、平静な心を保たねばならない。 <br> <span class="korean-text"> 곤란 속에서야말로 평정심을 유지해야 한다. <br> <span class="korean-text2">  -호라티우스- ',
-    '自分自身を御せない者は、いつまでも奴隷のままだ。 <br> <span class="korean-text"> 자기 자신을 다스리지 못하는 자는, 영원히 노예다. <br> <span class="korean-text2">  -요한 볼프강 폰 괴테- ',
-    'あなたが出会う最悪の敵は、常にあなた自身だ。 <br> <span class="korean-text"> 그대가 마주칠 수 있는 최악의 적은, 언제나 그대 자신이다. <br> <span class="korean-text2">  -프리드리히 니체- ',
-    '忘れたいことほど、忘れることはできない。 <br> <span class="korean-text"> 잊고 싶은 것일수록, 잊을 수 없다 <br> <span class="korean-text2">  -프리드리히 니체- ',
-    '本当に, 本気で何かを成し遂げる時、人はいつも孤独な法です。 <br> <span class="korean-text"> 정말로, 진심으로 무언가를 이루어낼때, 사람은 언제나 고독한 법이에요. <br> <span class="korean-text2">  -일레이나- ',
-    '真実を見た者は、二度と偽りの世界に戻れない。 <br> <span class="korean-text"> 진실을 본 자는 다신 거짓된 세계로 돌아갈 수 없다. <br> <span class="korean-text2">  -사일러스- ',
-    '過去を壊すことができるのは自分自身だけだ。 <br> <span class="korean-text"> 과거를 부술 수 있는 건 자기 자신 뿐이다. <br> <span class="korean-text2">  -아야노코지 키요타카- ',
-    // Add more guidelines as needed
-    ];
+    <script>
+        // Array of helpful guidelines
+        const guidelines = [
+            '悪とは何か――弱さから生ずるすべてのものだ。 <br> <span class="korean-text"> 악이란 무엇인가, 나약함이 원인이 된 모든 행동이다. <br> <span class="korean-text2"> -프리드리히 니체- ',
+            'しかし、概して人々が運命と呼ぶものは、大半が自分の愚行にすぎない。 <br> <span class="korean-text"> 하지만 일반적으로 사람들이 운명이라 부르는 것은 태반이 자신의 어리석은 행동에 지나지 않는다. <br> <span class="korean-text2">  -아르투어 쇼펜하우어- ',
+            '困難の中でこそ、平静な心を保たねばならない。 <br> <span class="korean-text"> 곤란 속에서야말로 평정심을 유지해야 한다. <br> <span class="korean-text2">  -호라티우스- ',
+            '自分自身を御せない者は、いつまでも奴隷のままだ。 <br> <span class="korean-text"> 자기 자신을 다스리지 못하는 자는, 영원히 노예다. <br> <span class="korean-text2">  -요한 볼프강 폰 괴테- ',
+            'あなたが出会う最悪の敵は、常にあなた自身だ。 <br> <span class="korean-text"> 그대가 마주칠 수 있는 최악의 적은, 언제나 그대 자신이다. <br> <span class="korean-text2">  -프리드리히 니체- ',
+            '忘れたいことほど、忘れることはできない。 <br> <span class="korean-text"> 잊고 싶은 것일수록, 잊을 수 없다 <br> <span class="korean-text2">  -프리드리히 니체- ',
+            '本当に, 本気で何かを成し遂げる時、人はいつも孤独な法です。 <br> <span class="korean-text"> 정말로, 진심으로 무언가를 이루어낼때, 사람은 언제나 고독한 법이에요. <br> <span class="korean-text2">  -일레이나- ',
+            '真実を見た者は、二度と偽りの世界に戻れない。 <br> <span class="korean-text"> 진실을 본 자는 다신 거짓된 세계로 돌아갈 수 없다. <br> <span class="korean-text2">  -사일러스- ',
+            '過去を壊すことができるのは自分自身だけだ。 <br> <span class="korean-text"> 과거를 부술 수 있는 건 자기 자신 뿐이다. <br> <span class="korean-text2">  -아야노코지 키요타카- ',
+            // Add more guidelines as needed
+        ];
 
-    // Function to display a random guideline
-    function displayRandomGuideline() {
-        // Get a random index from the guidelines array
-        const randomIndex = Math.floor(Math.random() * guidelines.length);
-        
-        // Display the guideline in the HTML
-        const guidelineElement = document.querySelector('.b1 p');
-        guidelineElement.innerHTML = guidelines[randomIndex];
-    }
+        // Function to display a random guideline
+        function displayRandomGuideline() {
+            // Get a random index from the guidelines array
+            const randomIndex = Math.floor(Math.random() * guidelines.length);
 
-    // Call the function when the page loads
-    window.onload = displayRandomGuideline;
-</script>
-    
+            // Display the guideline in the HTML
+            const guidelineElement = document.querySelector('.b1 p');
+            guidelineElement.innerHTML = guidelines[randomIndex];
+        }
+
+        // Call the function when the page loads
+        window.onload = displayRandomGuideline;
+    </script>
+
 </head>
+
 <body>
 
     <div class="box_area">
         <header>
             <div class="wrapper">
                 <a href="#"> <img src="./images/image1.png" alt="이미지1" class="blog-image2"> </a>
-                <nav> 
+                <nav>
                     <a href="index.html"> Home </a>
                     <a href="intro.html"> Intro </a>
                     <a href="projects.html"> Projects </a>
                     <a href="hobby.html"> Hobby </a>
                     <a href="#"> Blogs </a>
-                    
-        
+
+
                 </nav>
             </div>
         </header>
 
-      
+
 
         <div class="banner-area">
             <h2> Lee Jung Pyo's_Diary </h2>
         </div>
 
-        <div class="content-area">    
-            <h2> <br> Welcome indeed. </h2>   
-            <h3></h3>       
+        <div class="content-area">
+            <h2> <br> Welcome indeed. </h2>
+            <h3></h3>
             <div class="wrapper">
-                
-                
-                <p>  
+
+
+                <p>
                     <br>
                     안녕하세요. 개발자 나임나로(가명) 입니다. &nbsp;
                     앱,게임,웹 및 여러가지 프로젝트를 진행하고 있습니다.
-                    
-                    &nbsp;  &nbsp;그 외에 PS 및 개인적인 커미션 또한 기록합니다.
+
+                    &nbsp; &nbsp;그 외에 PS 및 개인적인 커미션 또한 기록합니다.
                     <br>
-                    hello. NaimNaro here. i'm working on 
+                    hello. NaimNaro here. i'm working on
                     apps, games, web, and various projects. In addition, PS and drawing work are also recorded.
-                    
-        
-                </p>              
-                <div class="portfolio-item">                                            
-                    <div class="b1">                       
+
+
+                </p>
+                <div class="portfolio-item">
+                    <div class="b1">
                         <p></p>
-                    
+
 
                     </div>
-                    <div class="b2">                       
-                        <p>  
-                            <div class="social-icons"></div>
-                            <img src="./images/instagram.png" alt="이미지1" class="blog-image3">
-                            <img src="./images/twitter.png" alt="이미지1" class="blog-image3">
-                            <img src="./images/youtube.png" alt="이미지1" class="blog-image3">
-                            <img src="./images/solved.png" alt="이미지1" class="blog-image3">
+                    <div class="b2">
+                        <p>
+                        <div class="social-icons"></div>
+                        <img src="./images/instagram.png" alt="이미지1" class="blog-image3">
+                        <img src="./images/twitter.png" alt="이미지1" class="blog-image3">
+                        <img src="./images/youtube.png" alt="이미지1" class="blog-image3">
+                        <img src="./images/solved.png" alt="이미지1" class="blog-image3">
                         </p>
-                    </div>             
-                </div> 
-                   
-    
+                    </div>
+                </div>
 
-    
+
+
+
 </body>
+
 </html>

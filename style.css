@@ -35,6 +35,31 @@ header {
     box-shadow: 0 0 10px rgb(5, 5, 5);
     
 }
+.blog-image3 {
+
+
+
+    width: 15%;
+    height: 50px;
+    margin: 10px;
+
+
+
+}
+.b2 {
+    width: calc(100%); /* 50%의 너비에서 10px 여백을 뺀 크기로 설정 */
+    height: 100px;
+    border: 1px solid #000000;
+    background-color: #444444;
+    box-sizing: border-box; /* box-sizing 추가 */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 0 5px rgba(5, 5, 5, 0.66);
+    
+}
 
 
 .logo {
@@ -169,6 +194,17 @@ nav a:hover{
         height: 50px;
 
         
+    }
+    .blog-image3 {
+
+
+
+        width: 10%;
+        height: 40px;
+        margin: 10px;
+    
+    
+    
     }
 
    
