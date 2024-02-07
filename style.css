@@ -146,6 +146,7 @@ nav a:hover{
 @media (max-width: 600px) {
     .content-area {
         top: calc( 30vh + 20 * (100vw - 300px) / 100); /* 26vh에서 46vh까지 선형으로 변화 */
+        
     }
 
     .banner-area h2 {
@@ -236,7 +237,7 @@ nav a:hover{
     .banner-area{
         background-image: url("images/sunset.jpg");
         /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         top: 8%;
         height: 30%;
