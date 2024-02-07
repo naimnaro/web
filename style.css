@@ -112,7 +112,7 @@ nav a:hover{
     position : relative;
     /* background: url('./images/bg1.png'); */
     background: #ffffff;
-    top : 550px;
+    top : 500px;
 
 }
 .content-area h2{
@@ -238,7 +238,7 @@ nav a:hover{
         /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
         background-size: 100%;
         background-position: center;
-        top: 7%;
+        top: 8%;
         height: 30%;
         width : 100%;
         position :fixed;
