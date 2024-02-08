@@ -167,51 +167,45 @@ nav a:hover{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171); /* 가로, 세로, 흐림 정도, 색상 조절 */
     
 }
+@media (min-width: 1600px) {
+    .content-area {
+        top: calc(500px + 2 * (100vw - 1600px) / 10);
+    }
+    .banner-area h2 {
+        font-size: calc(40px + 2 * (100vw - 300px) / 100); 
+
+        text-align:center;
+    }
+}
+
 
 @media (max-width: 600px) {
     .content-area {
         top: calc( 26vh + 20 * (100vw - 300px) / 100); /* 26vh에서 46vh까지 선형으로 변화 */
-        
     }
 
     .banner-area h2 {
         font-size: calc(20px + 3 * (100vw - 300px) / 100); /* 20px에서 30px까지 선형으로 변화 */
         margin-top: 30px;
         text-align:center;
-        
     }
 }
 
-
-
 @media (max-width: 600px) {
-
-    
     .blog-image2 {
         margin-top: 10px;
         margin-bottom: 0px;
         max-width: 50px;
         height: 50px;
-
-        
     }
     .blog-image3 {
-
-
-
         width: 30px;
         height: 30px;
         margin: 10px;
-    
-    
-    
     }
-
-   
     .content-area p{
         font-size: 10px;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.171); /* 가로, 세로, 흐림 정도, 색상 조절 */
-        
     }
     .content-area h2{
         font-size: 20px;
@@ -225,25 +219,19 @@ nav a:hover{
     .nav{
         float : right;
         line-height: 30px;
-        
     }
     .nav a{
-        
         font-size: 5px;
-    
-        
     }
     header {
         width: 100%; /* 화면이 768px 이하일 때 너비를 90%로 변경 */
         height: 70px;
-       
     }
     .logo {
         width: 0%;
         float: left;
         text-align: left;
         line-height: 100px;
-       
     }
     .logo a{
         text-decoration: none;
@@ -251,24 +239,19 @@ nav a:hover{
         color: #ffffff;
         font-family:cursive;
         letter-spacing: 1px;
-        
     }
     nav{
         float : right;
         line-height: 70px;
-        
     }
     nav a{
-       
         text-decoration: none;
         font-size: 12px;
         color: #ffffff;
         font-family: 'Arial';
-        
         letter-spacing: 1px;
         padding: 5px;
         text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
-        
     }
     .banner-area{
         background-image: url("images/sunset.jpg");
@@ -280,7 +263,6 @@ nav a:hover{
         width : 100%;
         position :fixed;
     }
-    
     .banner-area:after{
         content: '';
         position : absolute;
