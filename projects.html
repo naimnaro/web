@@ -102,6 +102,7 @@
         }
 
         .b2 {
+            position: relative;
             margin-top: -60px;
             height: 300px;
             width: 90%;
@@ -119,6 +120,47 @@
             justify-content: flex-start;
         }
 
+        .icon-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 1%;
+            
+            /* 아이콘 간격 조정 */
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon-image2 {
+            margin: 1%;
+            position: absolute;
+            top: 0;
+            right: 60px;
+            /* 아이콘 간격에 따라 조정 */
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .icon-image {
+                width: 25px;
+                height: 25px;
+                margin-right: 5px;
+                /* 작은 화면일 때 아이콘 간격 조정 */
+            }
+            .icon-image2 {
+                margin-right: 5px;
+                width: 25px;
+                height: 25px;
+                right: 30px;
+                /* 작은 화면일 때 아이콘 간격 조정 */
+            }
+        }
+
+
+
+
+
         .b2 p {
             font-size: 30px !important;
             margin-left: 30px;
@@ -126,10 +168,17 @@
             text-align: left;
             /* 텍스트를 왼쪽 정렬로 설정 */
         }
+
         .b2_p2 {
-                font-size: 15px;
-                /* 적절한 크기로 조절 */
-            }
+            font-size: 15px;
+            /* 적절한 크기로 조절 */
+            position: absolute; /* 절대적 위치 설정 */
+            bottom: 3%; /* 하단에 붙임 */
+            left: 2%;
+            
+        }
+
+
 
 
         .b3 {
@@ -286,7 +335,7 @@
         }
 
 
-        @media (max-width: 800px) {
+        @media (max-width: 600px) {
 
             .content-area {
                 /*메인 */
@@ -379,12 +428,17 @@
                 /* 이미지를 위쪽으로 정렬 */
             }
 
+
+
             .b2 p {
                 font-size: 10px !important;
                 margin-left: 15px;
                 /* 원하는 마진 값으로 조정 */
                 text-align: left;
                 /* 텍스트를 왼쪽 정렬로 설정 */
+            }
+            .b2_p2{
+                font-size: 8px;
             }
 
             .b3 {
@@ -450,6 +504,18 @@
                 transform: scale(1.05);
             }
         }
+
+        .iframe-container {
+            float: right;
+            /* 우측으로 부유(floating)시킵니다 */
+            margin-left: 10px;
+            /* 원하는 여백 값으로 조정합니다 */
+        }
+
+        .youtube-video {
+            display: block;
+            /* 인라인 요소를 블록 요소로 변경하여 너비와 높이를 조절합니다 */
+        }
     </style>
 
 </head>
@@ -488,23 +554,22 @@
                         </p>
                     </div>
                     <div class="b2">
+                        <img src="./images/youtube.png" alt="Icon Image" class="icon-image">
+                        <img src="./images/github2.png" alt="Icon Image" class="icon-image2">
                         <p>
                             Main : Labyrinth_
-                            <br> <br> <br> <br> <br> <br>
                             
-                            
-                            <span class="b2_p2"> Unity 와 파이어베이스 DB를 연동한 2D 게임입니다.
+                            <span class="b2_p2"> Unity 와 파이어베이스 DB를 연동한 2D 게임입니다. </span>
 
                         </p>
+
                     </div>
                     <div class="b3">
                         <p>
 
                             Main : personal webpage
-                            <br> <br> <br> <br> <br> <br>
-                            
-                            
-                            <span class="b2_p2"> html/css 로 만들어진 현재 접속해있는 개인 웹사이트 입니다.
+                        
+                            <span class="b2_p2">html/css 로 만들어진 현재 접속해있는 개인 웹사이트 입니다.  </span>
                         </p>
                     </div>
                     <div class="b4">
