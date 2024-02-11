@@ -39,6 +39,7 @@
                 height: calc(2130px - (min(1300px, max(1000px, 1300px)) - 1000px) * 0.09);
             }
         }
+
         @media (min-width: 1300px) {
             .box_intro {
                 margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1000px) * 0.3);
@@ -46,6 +47,7 @@
                 height: calc(2130px - (min(1300px, max(1000px, 1300px)) - 1000px) * 0.3);
             }
         }
+
         @media (min-width: 1600px) {
             .box_intro {
                 margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1000px) * 0.6);
@@ -110,6 +112,11 @@
             background-image: url("./images/labyrinth_projects_banner.png");
             background-size: cover;
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            /* 아이템을 수직 방향으로 나열 */
+            align-items: flex-start;
+            justify-content: flex-start;
         }
 
         .b2 p {
@@ -354,7 +361,17 @@
                 background-image: url("./images/labyrinth_projects_banner.png");
                 background-size: cover;
                 transition: transform 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                /* 아이템을 수직 방향으로 나열 */
+                align-items: flex-start;
+                justify-content: flex-start;
 
+            }
+
+            .b2 img {
+                align-self: flex-start;
+                /* 이미지를 위쪽으로 정렬 */
             }
 
             .b2 p {
@@ -468,6 +485,9 @@
                     <div class="b2">
                         <p>
                             Main : Labyrinth_
+                            <br> <br> <br> <br> <br> <br>
+                            
+                            Unity 와 구글 파이어베이스 DB를 연동한 2D 게임입니다.
 
                         </p>
                     </div>
