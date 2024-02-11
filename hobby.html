@@ -27,10 +27,32 @@
             /* 수평, 수직 가운데 정렬 */
             background-color: #444444;
             box-shadow: 0 0 10px rgba(5, 5, 5, 0.819);
-
-
-
         }
+
+        @media (min-width: 1000px) {
+            .box_intro {
+                margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1000px) * 0.08);
+                width: 100%;
+                height: calc(2130px - (min(1300px, max(1000px, 1300px)) - 1000px) * 0.09);
+            }
+        }
+
+        @media (min-width: 1300px) {
+            .box_intro {
+                margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1000px) * 0.3);
+                width: 100%;
+                height: calc(2130px - (min(1300px, max(1000px, 1300px)) - 1000px) * 0.3);
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .box_intro {
+                margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1000px) * 0.6);
+                width: 100%;
+                height: calc(2130px - (min(1300px, max(1000px, 1300px)) - 1000px) * 0.6);
+            }
+        }
+
 
         .b1,
         .b2,
@@ -173,7 +195,7 @@
 
 
 
-        
+
 
         .b_icon .social-icons {
             display: flex;
@@ -243,22 +265,23 @@
                 background-size: cover;
                 top: 100px;
             }
+
             .box_intro {
-            margin-top: 30px;
-            width: 100%;
-            height: 1200px;
-            display: grid;
-            place-items: center;
-            /* 수평, 수직 가운데 정렬 */
-            background-color: #444444;
-            box-shadow: 0 0 10px rgba(5, 5, 5, 0.819);
+                margin-top: 30px;
+                width: 100%;
+                height: 1200px;
+                display: grid;
+                place-items: center;
+                /* 수평, 수직 가운데 정렬 */
+                background-color: #444444;
+                box-shadow: 0 0 10px rgba(5, 5, 5, 0.819);
             }
 
             .b1 {
 
 
                 height: 200px;
-                
+
                 order: -1;
                 /* .b1을 1번째로 표시 */
                 border-radius: 0;
@@ -278,7 +301,7 @@
 
             .b2 {
                 margin-top: -30px;
-                
+
                 height: 200px;
                 order: 1;
                 /* .b1을 2번째로 표시 */
@@ -298,7 +321,7 @@
 
             .b3 {
                 margin-top: -30px;
-               
+
                 height: 200px;
                 order: 2;
                 /* .b1을 2번째로 표시 */
@@ -315,7 +338,7 @@
 
             .b4 {
                 margin-top: -30px;
-                
+
                 height: 200px;
                 order: 2;
                 /* .b1을 2번째로 표시 */
@@ -416,11 +439,16 @@
                     <div class="b_icon">
                         <p>
                         <div class="social-icons"></div>
-                        <a href="https://github.com/naimnaro"><img src="./images/github2.png" alt="이미지1" class="blog-image3"></a>
-                        <a href="https://solved.ac/profile/xez8jf"><img src="./images/solved.png" alt="이미지1" class="blog-image3"></a>
-                        <a href="https://www.instagram.com/naim_naro/"><img src="./images/instagram.png" alt="Instagram" class="blog-image3"></a>
-                        <a href="https://twitter.com/NaimNaro"><img src="./images/twitter.png" alt="이미지1" class="blog-image3"></a>
-                        <a href="https://www.youtube.com/@naimnaro6797"><img src="./images/youtube.png" alt="이미지1" class="blog-image3"></a>
+                        <a href="https://github.com/naimnaro"><img src="./images/github2.png" alt="이미지1"
+                                class="blog-image3"></a>
+                        <a href="https://solved.ac/profile/xez8jf"><img src="./images/solved.png" alt="이미지1"
+                                class="blog-image3"></a>
+                        <a href="https://www.instagram.com/naim_naro/"><img src="./images/instagram.png" alt="Instagram"
+                                class="blog-image3"></a>
+                        <a href="https://twitter.com/NaimNaro"><img src="./images/twitter.png" alt="이미지1"
+                                class="blog-image3"></a>
+                        <a href="https://www.youtube.com/@naimnaro6797"><img src="./images/youtube.png" alt="이미지1"
+                                class="blog-image3"></a>
                         </p>
                     </div>
                 </div>
