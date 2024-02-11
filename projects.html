@@ -31,6 +31,7 @@
 
 
         }
+
         @media (min-width: 601px) {
             .box_intro {
                 margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1800px) * 0.03);
@@ -38,6 +39,7 @@
                 height: calc(2130px - (min(1300px, max(1000px, 1300px)) - 1800px) * 0.03);
             }
         }
+
         @media (min-width: 800px) {
             .box_intro {
                 margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1400px) * 0.03);
@@ -45,7 +47,7 @@
                 height: calc(2130px - (min(1300px, max(1000px, 1300px)) - 1400px) * 0.03);
             }
         }
-       
+
         @media (min-width: 1000px) {
             .box_intro {
                 margin-top: calc(-90px + (min(1300px, max(1000px, 1300px)) - 1000px) * 0.08);
@@ -139,10 +141,11 @@
             top: 0;
             right: 0;
             margin: 1%;
-            
+
             /* 아이콘 간격 조정 */
             width: 50px;
             height: 50px;
+            transition: transform 0.2s ease;
         }
 
         .icon-image2 {
@@ -153,9 +156,10 @@
             /* 아이콘 간격에 따라 조정 */
             width: 50px;
             height: 50px;
+            transition: transform 0.2s ease;
         }
 
-        
+
 
 
 
@@ -172,10 +176,12 @@
         .b2_p2 {
             font-size: 15px;
             /* 적절한 크기로 조절 */
-            position: absolute; /* 절대적 위치 설정 */
-            bottom: 3%; /* 하단에 붙임 */
+            position: absolute;
+            /* 절대적 위치 설정 */
+            bottom: 3%;
+            /* 하단에 붙임 */
             left: 2%;
-            
+
         }
 
 
@@ -187,18 +193,21 @@
             height: 300px;
             order: 2;
             width: 90%;
-           
+
             /* .b1을 2번째로 표시 */
             border-radius: 0;
             transition: transform 0.3s ease;
         }
+
         .b3_p2 {
             font-size: 15px;
             /* 적절한 크기로 조절 */
-            position: absolute; /* 절대적 위치 설정 */
-            bottom: 3%; /* 하단에 붙임 */
+            position: absolute;
+            /* 절대적 위치 설정 */
+            bottom: 3%;
+            /* 하단에 붙임 */
             left: 2%;
-            
+
         }
 
         .b3 p {
@@ -254,6 +263,12 @@
         .b5:hover {
             /* 호버 효과 스타일을 여기에 작성합니다 */
             transform: scale(1.05);
+        }
+
+        .icon-image:hover,
+        .icon-image2:hover {
+            transform: scale(1.3);
+
         }
 
         .b_icon {
@@ -366,16 +381,24 @@
 
 
             }
+
             .icon-image {
                 margin: 3%;
                 width: 25px;
                 height: 25px;
-                
+
                 /* 작은 화면일 때 아이콘 간격 조정 */
             }
+
+            .icon-image:hover,
+            .icon-image2:hover {
+                transform: scale(1.05);
+
+            }
+
             .icon-image2 {
                 margin: 3%;
-                
+
                 width: 25px;
                 height: 25px;
                 right: 30px;
@@ -464,7 +487,8 @@
                 text-align: left;
                 /* 텍스트를 왼쪽 정렬로 설정 */
             }
-            .b2_p2{
+
+            .b2_p2 {
                 font-size: 8px;
             }
 
@@ -531,10 +555,6 @@
                 transform: scale(1.05);
             }
         }
-
-       
-
-       
     </style>
 
 </head>
@@ -573,34 +593,36 @@
                         </p>
                     </div>
                     <div class="b2">
-                        <a href="https://github.com/naimnaro"> </a><img src="./images/youtube.png" alt="Icon Image" class="icon-image">
-                        <a href="https://github.com/naimnaro"> </a><img src="./images/github2.png" alt="Icon Image" class="icon-image2">
+                        <a href="https://www.youtube.com/watch?v=oBQMDn2fYU8"><img src="./images/youtube.png"
+                                alt="Icon Image" class="icon-image"> </a>
+                        <a href="https://github.com/naimnaro"> </a><img src="./images/github2.png" alt="Icon Image"
+                            class="icon-image2">
                         <p>
                             Main : Labyrinth_
-                            
+
                             <span class="b2_p2"> Unity 와 파이어베이스 DB를 연동한 2D 게임입니다. </span>
 
                         </p>
 
                     </div>
                     <div class="b3">
-                        
+
                         <p>
 
                             Main : personal webpage
-                        
+
                             <span class="b2_p2"> html/css 로 만들어진 현재 접속해있는 개인 웹사이트 입니다. </span>
 
                         </p>
                     </div>
                     <div class="b4">
-                       
+
                         <p>
 
                             Sub : web_board
 
 
-                            <span class="b2_p2"> not yet. </span> 
+                            <span class="b2_p2"> not yet. </span>
                         </p>
                     </div>
                     <div class="b5">
