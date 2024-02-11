@@ -82,7 +82,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     color: #ffffff;
     font-family: 'Arial';
     letter-spacing: 3px;
@@ -193,6 +193,18 @@ nav a:hover{
         
         
     }
+}
+@media (max-width: 1000px) {
+    nav a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: 'Arial';
+        letter-spacing: 1px;
+        padding: 5px;
+        text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
+    }
+    
 }
 
 @media (max-width: 600px) {
