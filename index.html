@@ -78,19 +78,21 @@
             top: 65%;
             right: 3%;
 
-
             /* 아이콘 간격 조정 */
             width: 50px;
             height: 50px;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: transform 0.5s ease;
+            transform-origin: center;
+        }
 
 
+        .loading_image.rotate {
+            transform: rotate(360deg) !important;
 
         }
-        .loading_image:hover{
-            transform: scale(1.3);
-        }
+
+
 
         @media (max-width: 600px) {
 
@@ -203,11 +205,18 @@
             guidelineElement.innerHTML = guidelines[randomIndex];
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
-        displayRandomGuideline();
-        const loadingArrow = document.querySelector('.loading_image');
-        loadingArrow.addEventListener('click', displayRandomGuideline);
-    });
+        document.addEventListener('DOMContentLoaded', function () {
+            displayRandomGuideline();
+            const loadingArrow = document.querySelector('.loading_image');
+            let rotationAngle = 0; // 회전 각도 변수 초기화
+
+            // 클릭에 대한 이벤트 핸들러
+            loadingArrow.addEventListener('click', function () {
+                rotationAngle += 360; // 회전 각도 360도 증가
+                loadingArrow.style.transform = `rotate(${rotationAngle}deg)`;
+                displayRandomGuideline(); // 랜덤 가이드라인 표시
+            });
+        });
 
     </script>
 
@@ -224,7 +233,7 @@
                     <a href="intro.html"> Intro </a>
                     <a href="projects.html"> Projects </a>
                     <a href="hobby.html"> Hobby </a>
-                    <a href="#"> Blogs </a>
+                    <a href="#"> Blog </a>
 
 
                 </nav>
@@ -242,20 +251,13 @@
             <h3></h3>
             <div class="wrapper">
                 <p>
-                    <br>
-                    안녕하세요. 개발자 이중표 입니다. &nbsp;
-                    앱,게임,웹 및 여러가지 프로젝트를 진행하고 있습니다.
-
-                    &nbsp; &nbsp;그 외에 PS 및 개인적인 커미션 또한 기록합니다.
-                    <br>
-                    hello. developer LJP here. i'm working on
-                    apps, games, web, and various projects. In addition, PS and drawing work are also recorded.
+                    
 
 
                 </p>
                 <div class="portfolio-item">
                     <div class="b1">
-                        
+
                         <p></p>
                         <img src="./images/loading_arrow.png" alt="Loading Arrow" class="loading_image">
 
