@@ -72,15 +72,17 @@
 
 
         }
+
         .loading_image {
             position: absolute;
             top: 65%;
             right: 3%;
-            
+
 
             /* 아이콘 간격 조정 */
             width: 50px;
             height: 50px;
+            cursor: pointer;
 
 
 
@@ -89,19 +91,21 @@
         @media (max-width: 600px) {
 
             .loading_image {
-                
+
                 position: absolute;
                 top: 58%;
                 right: 2%;
-                
+
 
                 /* 아이콘 간격 조정 */
                 width: 25px;
                 height: 25px;
+                cursor: pointer;
 
 
 
             }
+
             .b1 {
                 height: 250px;
             }
@@ -128,7 +132,7 @@
                 /* 적절한 크기로 조절 */
             }
 
-            
+
 
         }
 
@@ -154,7 +158,7 @@
 
         }
 
-        
+
 
 
 
@@ -193,8 +197,12 @@
             guidelineElement.innerHTML = guidelines[randomIndex];
         }
 
-        // Call the function when the page loads
-        window.onload = displayRandomGuideline;
+        document.addEventListener('DOMContentLoaded', function() {
+        displayRandomGuideline();
+        const loadingArrow = document.querySelector('.loading_image');
+        loadingArrow.addEventListener('click', displayRandomGuideline);
+    });
+
     </script>
 
 </head>
@@ -241,8 +249,9 @@
                 </p>
                 <div class="portfolio-item">
                     <div class="b1">
-                        <img src="./images/loading_arrow.png" alt="Loading Arrow" class="loading_image">
+                        
                         <p></p>
+                        <img src="./images/loading_arrow.png" alt="Loading Arrow" class="loading_image">
 
 
                     </div>
