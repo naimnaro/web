@@ -105,12 +105,12 @@ nav a:hover{
     color : black;
 }
 .banner-area{
-    background-image: url("images/sunset3.jpg");
+    background-image: url("images/sunset4.jpg");
     /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
     
-    background-size: cover;
+    background-size:cover;
     background-position: bottom;
-
+    
     top: 100px;
     height: 100vh;
     width : 100%;
@@ -132,7 +132,7 @@ nav a:hover{
 }
 .banner-area h2{
     padding-top : 10%;
-    font-size: 60px;
+    font-size: 54px;
     text-align:center;
     font-family: "Major Mono Display", monospace;
     color : #ffffff;
