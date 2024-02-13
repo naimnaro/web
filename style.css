@@ -9,13 +9,14 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #000000;
-    
-    
+
+
 }
+
 .major-mono-display-regular {
     font-family: "Major Mono Display", monospace;
     font-weight: 500;
-    font-style:normal;
+    font-style: normal;
 }
 
 
@@ -23,7 +24,7 @@ body {
 .wrapper {
     width: 90%;
     margin: 0 auto;
-   
+
 }
 
 header {
@@ -34,39 +35,48 @@ header {
     z-index: 2;
 
 }
-.blog-image2{
+
+.blog-image2 {
     margin-top: 10px;
     max-width: 80px;
     height: 80px;
-    border: 3px solid #c1c1c1; /* 이미지에 테두리 추가 */
+    border: 3px solid #c1c1c1;
+    /* 이미지에 테두리 추가 */
     float: left;
-    border-radius: 50%; /* 동그라미 모양으로 테두리 설정 */
-    overflow: hidden; /* 필요한 경우 이미지가 테두리를 벗어나지 않도록 처리 */
+    border-radius: 50%;
+    /* 동그라미 모양으로 테두리 설정 */
+    overflow: hidden;
+    /* 필요한 경우 이미지가 테두리를 벗어나지 않도록 처리 */
     box-shadow: 0 0 10px rgb(5, 5, 5);
-    
+
 }
+
 .blog-image3 {
     width: 50px;
     height: 50px;
     margin: 10px;
     transition: transform 0.3s ease;
 }
-.blog-image3:hover{
+
+.blog-image3:hover {
     transform: scale(1.3);
 }
+
 .b2 {
-    width: calc(100%); /* 50%의 너비에서 10px 여백을 뺀 크기로 설정 */
+    width: calc(100%);
+    /* 50%의 너비에서 10px 여백을 뺀 크기로 설정 */
     height: 100px;
     border: 1px solid #000000;
     background-color: #444444;
-    box-sizing: border-box; /* box-sizing 추가 */
+    box-sizing: border-box;
+    /* box-sizing 추가 */
     margin-bottom: 20px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     box-shadow: 0 0 5px rgba(5, 5, 5, 0.66);
-    
+
 }
 
 
@@ -75,155 +85,179 @@ header {
     float: left;
     text-align: left;
     line-height: 100px;
-   
+
 }
-.logo a{
+
+.logo a {
     text-decoration: none;
     font-size: 30px;
     color: #ffffff;
-    font-family:cursive;
+    font-family: cursive;
     letter-spacing: 4px;
-    
+
 }
-nav{
-    float : right;
+
+nav {
+    float: right;
     line-height: 100px;
-    
+
 }
-nav a{
+
+nav a {
     text-decoration: none;
     font-size: 24px;
     color: #ffffff;
-    
+
     letter-spacing: 3px;
     padding: 10px;
-    text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
-    
-}
-nav a:hover{
-    background: #fff;
-    color : black;
-}
-.banner-area{
-    background-image: url("images/sunset3.jpg");
-    /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
-    
-    background-size:cover;
-    background-position: bottom;
-    
-    top: 100px;
-    height: 100vh;
-    width : 100%;
-    position :fixed;
-    
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    /* 가로, 세로, 흐림 정도, 색상 조절 */
+
 }
 
-.banner-area:after{
+nav a:hover {
+    background: #fff;
+    color: black;
+}
+
+.banner-area {
+    background-image: url("images/sunset3.jpg");
+    /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
+
+    background-size: cover;
+    background-position: bottom;
+
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+
+}
+
+.banner-area:after {
     content: '';
-    position : absolute;
-    top : 0;
-    left : 0;
-    display : block;
-    width : 100%;
-    height : 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
     background: #2f2f2f;
     opacity: .0;
     z-index: -1;
 }
-.banner-area h2{
-    padding-top : 10%;
 
-    text-align:center;
+.banner-area h2 {
+    padding-top: 10%;
+
+    text-align: center;
     font-family: "Major Mono Display", monospace;
-    color : #ffffff;
-    text-shadow: 8px 8px 8px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
-    
-    
+    color: #ffffff;
+    text-shadow: 8px 8px 8px rgb(0, 0, 0);
+    /* 가로, 세로, 흐림 정도, 색상 조절 */
+
+
 }
 
-.content-area{     /*메인 */
-    width : 100%;
-    height : 1000px;
-    position : relative;
+.content-area {
+    /*메인 */
+    width: 100%;
+    height: 1000px;
+    position: relative;
     /* background: url('./images/bg1.png'); */
     background: #ffffff;
-    top : 500px;
+    top: 500px;
 
 }
-.content-area h2{
+
+.content-area h2 {
     font-size: 30px;
-    margin : 0;
+    margin: 0;
     padding-top: 30px;
     letter-spacing: 4px;
-    text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312); /* 가로, 세로, 흐림 정도, 색상 조절 */
-    color : #474747;;
+    text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312);
+    /* 가로, 세로, 흐림 정도, 색상 조절 */
+    color: #474747;
+    ;
     font-style: Arial;
 }
-.content-area h3{
+
+.content-area h3 {
     font-style: Arial;
     font-size: 30px;
-    margin : 0;
+    margin: 0;
     padding-top: 30px;
     letter-spacing: 4px;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.373); /* 가로, 세로, 흐림 정도, 색상 조절 */
-    color : #474747;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.373);
+    /* 가로, 세로, 흐림 정도, 색상 조절 */
+    color: #474747;
 }
-.content-area p{
+
+.content-area p {
     padding: 2% 0;
     line-height: 35px;
     text-align: justify;
     font-size: 20px;
-    color : #474747;
-   
-    
+    color: #474747;
+
+
 }
+
 @media (min-width: 601px) {
     .content-area {
         top: calc(500px + 2 * (100vw - 1600px) / 10);
     }
-    .banner-area h2 {
-        font-size: calc(32px + 2 * (100vw - 300px) / 100); 
 
-        text-align:center;
+    .banner-area h2 {
+        font-size: calc(32px + 2 * (100vw - 300px) / 100);
+
+        text-align: center;
     }
 }
 
 
 @media (max-width: 600px) {
+    
     .major-mono-display-regular {
         font-family: "Major Mono Display", monospace;
         font-weight: 700;
-        font-style:normal;
+        font-style: normal;
     }
-   
+
     .content-area {
-        top: calc( 26vh + 20 * (100vw - 300px) / 100); /* 26vh에서 46vh까지 선형으로 변화 */
+        top: calc(26vh + 20 * (100vw - 300px) / 100);
+        /* 26vh에서 46vh까지 선형으로 변화 */
     }
 
     .banner-area h2 {
-        font-size: calc(16px + 3 * (100vw - 300px) / 100); /* 20px에서 30px까지 선형으로 변화 */
-        margin-top: 30px;
-        text-align:center;
+        font-size: calc(16px + 3 * (100vw - 300px) / 100);
+        /* 20px에서 30px까지 선형으로 변화 */
+        margin-top: 28px;
+        text-align: center;
     }
+
     .b2 {
-        
+
         height: 75px;
-        
-        
+
+
     }
-    
+
+   
 }
+
 @media (max-width: 1000px) {
-    nav a{
+    nav a {
         text-decoration: none;
         font-size: 18px;
         color: #ffffff;
-        
+
         letter-spacing: 1px;
         padding: 5px;
-        text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
+        text-shadow: 4px 4px 4px rgb(0, 0, 0);
+        /* 가로, 세로, 흐림 정도, 색상 조절 */
     }
-    
+
 }
 
 @media (max-width: 600px) {
@@ -233,89 +267,100 @@ nav a:hover{
         max-width: 50px;
         height: 50px;
     }
+
     .blog-image3 {
         width: 30px;
         height: 30px;
         margin: 5px;
-        
+
     }
-    .content-area p{
+
+    .content-area p {
         font-size: 10px;
-        
+
     }
-    .content-area h2{
+
+    .content-area h2 {
         font-size: 20px;
-        margin : 0;
+        margin: 0;
         padding-top: 30px;
-        
+
         letter-spacing: 2px;
-        text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312); /* 가로, 세로, 흐림 정도, 색상 조절 */
-        color : #474747;;
+        text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312);
+        /* 가로, 세로, 흐림 정도, 색상 조절 */
+        color: #474747;
+        ;
         font-style: Arial;
     }
-    .nav{
-        float : right;
+
+    .nav {
+        float: right;
         line-height: 30px;
     }
-    .nav a{
+
+    .nav a {
         font-size: 5px;
     }
+
     header {
-        width: 100%; /* 화면이 768px 이하일 때 너비를 90%로 변경 */
+        width: 100%;
+        /* 화면이 768px 이하일 때 너비를 90%로 변경 */
         height: 70px;
     }
+
     .logo {
         width: 0%;
         float: left;
         text-align: left;
         line-height: 100px;
     }
-    .logo a{
+
+    .logo a {
         text-decoration: none;
         font-size: 10px;
         color: #ffffff;
-        font-family:cursive;
+        font-family: cursive;
         letter-spacing: 1px;
     }
-    nav{
-        float : right;
+
+    nav {
+        float: right;
         line-height: 70px;
     }
-    nav a{
+
+    nav a {
         text-decoration: none;
-        font-size: calc(8px + 4 * (100vw - 300px) / 100); /* 20px에서 30px까지 선형으로 변화 */
+        font-size: calc(8px + 4 * (100vw - 300px) / 100);
+        /* 20px에서 30px까지 선형으로 변화 */
         color: #ffffff;
-        
+
         letter-spacing: 1px;
         padding: 5px;
-        text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
+        text-shadow: 4px 4px 4px rgb(0, 0, 0);
+        /* 가로, 세로, 흐림 정도, 색상 조절 */
     }
-    .banner-area{
-        background-image: url("images/sunset.jpg");
+
+    .banner-area {
+        background-image: url("images/sunset3.jpg");
         /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
         background-size: cover;
         background-position: center;
         top: 8%;
         height: 30%;
-        width : 100%;
-        position :fixed;
+        width: 100%;
+        position: fixed;
     }
-    .banner-area:after{
+
+    .banner-area:after {
         content: '';
-        position : absolute;
-        top : 0;
-        left : 0;
-        display : block;
-        width : 100%;
-        height : 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
         background: #2f2f2f;
         opacity: .0;
         z-index: -1;
     }
 }
-
-
-
-
-
-
