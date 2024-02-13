@@ -230,7 +230,7 @@ nav a:hover {
     }
 
     .banner-area h2 {
-        font-size: calc(12px + 3 * (100vw - 300px) / 100);
+        font-size: calc(14px + 3 * (100vw - 300px) / 100);
         /* 20px에서 30px까지 선형으로 변화 */
         margin-top: 34px;
         text-align: center;
