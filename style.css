@@ -105,7 +105,7 @@ nav a:hover{
     color : black;
 }
 .banner-area{
-    background-image: url("images/sunset4.jpg");
+    background-image: url("images/sunset3.jpg");
     /*background-image: url("https://media.githubusercontent.com/media/naimnaro/web/main/images/night.gif"); */
     
     background-size:cover;
@@ -137,6 +137,7 @@ nav a:hover{
     font-family: "Major Mono Display", monospace;
     color : #ffffff;
     text-shadow: 8px 8px 8px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
+    
     
     
 	
