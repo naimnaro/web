@@ -182,7 +182,7 @@ nav a:hover{
         top: calc(500px + 2 * (100vw - 1600px) / 10);
     }
     .banner-area h2 {
-        font-size: calc(36px + 2 * (100vw - 300px) / 100); 
+        font-size: calc(32px + 2 * (100vw - 300px) / 100); 
 
         text-align:center;
     }
