@@ -95,12 +95,10 @@
 
         }
 
-
-
         @media (max-width: 600px) {
 
             .box_intro {
-                
+
                 width: 100%;
                 height: 820px;
                 display: grid;
@@ -114,12 +112,13 @@
             }
 
             .content-area p {
-                
+
                 color: #ffffff;
-            
+
             }
-            .content-area h2{
-               
+
+            .content-area h2 {
+
                 font-size: 16px;
             }
 
@@ -140,8 +139,8 @@
 
             .b1-1 {
 
-            
-                margin-bottom: 15%;
+
+                margin-bottom: 8%;
                 height: 90%;
                 order: -1;
                 /* .b1-1을 1번째로 표시 */
@@ -161,7 +160,7 @@
             .b1 {
 
 
-                
+
                 height: 90%;
                 order: 1;
                 /* .b1을 2번째로 표시 */
@@ -186,7 +185,104 @@
 
             }
 
-          
+
+
+        }
+
+
+
+
+        @media (max-width: 400px) {
+
+            .box_intro {
+
+                width: 100%;
+                height: 820px;
+                display: grid;
+                place-items: center;
+                /* 수평, 수직 가운데 정렬 */
+                background-color: #444444;
+                box-shadow: 0 0 10px rgba(5, 5, 5, 0.819);
+
+
+
+            }
+
+            .content-area p {
+
+                color: #ffffff;
+
+            }
+
+            .content-area h2 {
+
+                font-size: 16px;
+            }
+
+            .b1-1,
+            .b1 {
+                width: 90%;
+                height: auto;
+
+                background-color: #2e2e2ed5;
+
+
+                box-shadow: 0 0 5px rgba(5, 5, 5, 0.808);
+                align-self: center;
+                /* 수직 가운데 정렬 */
+                border-radius: 0;
+                border: 1px solid #000000a9;
+            }
+
+            .b1-1 {
+
+
+                margin-bottom: 15%;
+                height: 90%;
+                order: -1;
+                /* .b1-1을 1번째로 표시 */
+                border-radius: 0;
+            }
+
+            .b1-1 p {
+
+                font-size: 8px;
+                margin-left: 20px;
+                /* 원하는 마진 값으로 조정 */
+                text-align: left;
+                color: #ffffff;
+                /* 텍스트를 왼쪽 정렬로 설정 */
+            }
+
+            .b1 {
+
+
+
+                height: 90%;
+                order: 1;
+                /* .b1을 2번째로 표시 */
+                border-radius: 0;
+            }
+
+            .b1 p {
+                margin-top: 2%;
+                font-size: 20px;
+                margin-left: 5%;
+                /* 원하는 마진 값으로 조정 */
+                text-align: left;
+                /* 텍스트를 왼쪽 정렬로 설정 */
+            }
+
+            .korean-text {
+                margin-top: 4%;
+                font-size: 15px;
+                /* 적절한 크기로 조절 */
+                display: block;
+                /* 블록 레벨로 변경 */
+
+            }
+
+
 
         }
 
@@ -240,14 +336,14 @@
         }
 
         .content-area h2 {
-        
-            
+
+
             padding-top: 30px;
             letter-spacing: 4px;
             text-shadow: 4px 4px 4px rgba(2, 2, 2, 0.312);
             /* 가로, 세로, 흐림 정도, 색상 조절 */
             color: #ffffff;
-            
+
             font-style: Arial;
         }
 
@@ -261,13 +357,12 @@
             /* 가로, 세로, 흐림 정도, 색상 조절 */
             color: #ffffff;
         }
-        .content-area p {
-                
-                color: #ffffff;
-            
-        }
 
-       
+        .content-area p {
+
+            color: #ffffff;
+
+        }
     </style>
 
     <script>
