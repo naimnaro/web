@@ -3,12 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.rubik-scribble-regular {
-    font-family: "Rubik Scribble", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-  
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -17,6 +12,12 @@ body {
     
     
 }
+.major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 500;
+    font-style: italic;
+}
+
 
 
 .wrapper {
@@ -109,10 +110,12 @@ nav a:hover{
     
     background-size: cover;
     background-position: bottom;
+
     top: 100px;
     height: 100vh;
     width : 100%;
     position :fixed;
+    
 }
 
 .banner-area:after{
@@ -131,9 +134,9 @@ nav a:hover{
     padding-top : 10%;
     font-size: 60px;
     text-align:center;
-    
-    color : #fff;
-    text-shadow: 4px 4px 4px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
+    font-family: "Major Mono Display", monospace;
+    color : #ffffff;
+    text-shadow: 8px 8px 8px rgb(0, 0, 0); /* 가로, 세로, 흐림 정도, 색상 조절 */
     
     
 	
