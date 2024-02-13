@@ -181,13 +181,7 @@
         }
     </style>
     <script>
-        var currentUrl = window.location.href;
-
-        // 파일 이름 숨기기
-        var hiddenUrl = currentUrl.replace('index.html', '');
-
-        // URL 변경하기
-        window.history.pushState({}, document.title, hiddenUrl);
+    
         // Array of helpful guidelines
         const guidelines = [
             '悪とは何か――弱さから生ずるすべてのものだ。 <br> <span class="korean-text"> 악이란 무엇인가ㅡ, 나약함이 원인이 된 모든 행동이다. <br> <span class="korean-text2"> -프리드리히 니체 『 신은 죽었다 』',
@@ -224,6 +218,10 @@
                 displayRandomGuideline(); // 랜덤 가이드라인 표시
             });
         });
+
+        var currentUrl = window.location.href;
+        var hiddenUrl = currentUrl.replace('index.html', '');
+        window.history.pushState({}, document.title, hiddenUrl);
 
     </script>
 
