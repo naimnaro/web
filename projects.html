@@ -11,6 +11,12 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script>
+        var currentUrl = window.location.href;
+        var hiddenUrl = currentUrl.replace('index.html', '');
+        window.history.pushState({}, document.title, hiddenUrl);
+    </script>
+
     <style>
         .portfolio-item {
             width: 90%;

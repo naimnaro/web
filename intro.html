@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 
     <link rel="stylesheet" href="style.css">
+    <script>
+        var currentUrl = window.location.href;
+        var hiddenUrl = currentUrl.replace('index.html', '');
+        window.history.pushState({}, document.title, hiddenUrl);
+    </script>
 
     <style>
         .portfolio-item {
