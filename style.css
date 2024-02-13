@@ -132,7 +132,7 @@ nav a:hover{
 }
 .banner-area h2{
     padding-top : 10%;
-    font-size: 54px;
+
     text-align:center;
     font-family: "Major Mono Display", monospace;
     color : #ffffff;
@@ -182,7 +182,7 @@ nav a:hover{
         top: calc(500px + 2 * (100vw - 1600px) / 10);
     }
     .banner-area h2 {
-        font-size: calc(40px + 2 * (100vw - 300px) / 100); 
+        font-size: calc(36px + 2 * (100vw - 300px) / 100); 
 
         text-align:center;
     }
@@ -190,12 +190,18 @@ nav a:hover{
 
 
 @media (max-width: 600px) {
+    .major-mono-display-regular {
+        font-family: "Major Mono Display", monospace;
+        font-weight: 700;
+        font-style:normal;
+    }
+   
     .content-area {
         top: calc( 26vh + 20 * (100vw - 300px) / 100); /* 26vh에서 46vh까지 선형으로 변화 */
     }
 
     .banner-area h2 {
-        font-size: calc(20px + 3 * (100vw - 300px) / 100); /* 20px에서 30px까지 선형으로 변화 */
+        font-size: calc(16px + 3 * (100vw - 300px) / 100); /* 20px에서 30px까지 선형으로 변화 */
         margin-top: 30px;
         text-align:center;
     }
@@ -205,6 +211,7 @@ nav a:hover{
         
         
     }
+    
 }
 @media (max-width: 1000px) {
     nav a{
@@ -276,7 +283,7 @@ nav a:hover{
     }
     nav a{
         text-decoration: none;
-        font-size: 12px;
+        font-size: calc(8px + 4 * (100vw - 300px) / 100); /* 20px에서 30px까지 선형으로 변화 */
         color: #ffffff;
         
         letter-spacing: 1px;
