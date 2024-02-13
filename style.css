@@ -3,13 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+.rubik-scribble-regular {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #000000;
     
+    
 }
+
 
 .wrapper {
     width: 90%;
