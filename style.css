@@ -205,7 +205,7 @@ nav a:hover {
 
 @media (min-width: 601px) {
     .content-area {
-        top: calc(500px + 2 * (100vw - 1600px) / 10);
+        top: calc(500px + 2 * (100vw - 1600px) / 10);    /* 해상도에 따라 선형으로 사이즈 조절 */
     }
 
     .banner-area h2 {
