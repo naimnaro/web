@@ -838,7 +838,7 @@ nav a:hover {
 
 
 
-    .content-area .b2 p {
+    .b2 p {
         font-size: 10px;
         margin-left: 15px;
         /* 원하는 마진 값으로 조정 */
@@ -846,7 +846,7 @@ nav a:hover {
         /* 텍스트를 왼쪽 정렬로 설정 */
     }
 
-    .content-area .b2_p2 {
+    .b2_p2 {
         font-size: 8px;
     }
 
@@ -859,7 +859,7 @@ nav a:hover {
         transition: transform 0.3s ease;
     }
 
-    .content-area .b3 p {
+    .b3 p {
         font-size: 10px; 
         margin-left: 15px;
         /* 원하는 마진 값으로 조정 */
@@ -878,7 +878,7 @@ nav a:hover {
         transition: transform 0.3s ease;
     }
 
-    .content-area .b4 p {
+    .b4 p {
         font-size: 10px;
         margin-left: 15px;
         /* 원하는 마진 값으로 조정 */
@@ -896,7 +896,7 @@ nav a:hover {
         transition: transform 0.3s ease;
     }
 
-    .content-area .b5 p {
+    .b5 p {
         font-size: 10px;
         margin-left: 15px;
         /* 원하는 마진 값으로 조정 */
