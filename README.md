@@ -1,6 +1,8 @@
 # web
-
 <p>
-<img src ="https://github.com/naimnaro/web/assets/133749784/416c4c7c-01ee-4397-a5c9-776daf5614d9">
+  <br> html/css/javascript 로 제작된 개인 웹페이지 입니다.
+</p>
+<p>
+<img src ="https://github.com/naimnaro/web/assets/133749784/0577b08b-bce2-420a-b39a-303f0f916dbe">
 
 </p>
