@@ -317,6 +317,8 @@ nav a:hover {
 
 .b4 {
     position: relative;
+    background-image: url("./images/react_crud1.png");
+    background-size: cover;
 
     height: 80%;
     width: 92%;
