@@ -1,6 +1,6 @@
 .blink {
     animation-name: blink;
-    animation-duration: 350ms;
+    animation-duration: 500ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
