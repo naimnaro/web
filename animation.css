@@ -1,0 +1,16 @@
+.blink {
+    animation-name: blink;
+    animation-duration: 350ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
