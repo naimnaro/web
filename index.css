@@ -242,12 +242,12 @@ nav a:hover {
     justify-content: center;
     box-shadow: 0 0 10px rgb(5, 5, 5);
     text-align: center;
-
-
 }
 
+
+
 .b1 p {
-    font-size: 30px !important;
+    font-size: 30px;
     color: #ffffff;
     text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.312);
     /* 가로, 세로, 흐림 정도, 색상 조절 */
@@ -298,6 +298,8 @@ nav a:hover {
     transform: rotate(360deg);
 
 }
+
+
 
 
 

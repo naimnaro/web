@@ -221,8 +221,8 @@ nav a:hover {
     /* .b1을 2번째로 표시 */
     border-radius: 0;
     border: 2px solid #000000;
-    background-image: url("./images/labyrinth_projects_banner.png");
-    background-size: cover;
+    background-image: url("./images/hobby2.png");
+    background-size: 50%;
     transition: transform 0.3s ease;
     display: flex;
 
@@ -286,8 +286,8 @@ nav a:hover {
     height: 80%;
     order: 2;
     width: 92%;
-    background-image: url("./images/personal_web.png");
-    background-size: cover;
+    background-image: url("./images/hobby1.jpg");
+    background-size: 50%;
 
     /* .b1을 2번째로 표시 */
     border-radius: 0;
