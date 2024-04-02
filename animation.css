@@ -5,12 +5,29 @@
     animation-direction: alternate;
 }
 
+.blink2{
+    animation-name: blink2;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 @keyframes blink {
     0% {
         opacity: 1;
     }
 
     100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink2 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
         opacity: 0;
     }
 }
