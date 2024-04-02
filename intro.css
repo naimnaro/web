@@ -200,6 +200,7 @@ nav a:hover {
 
 .b1 {
     margin-bottom: 40px;
+    position: relative;
 
 
     height: 350px;
@@ -208,6 +209,12 @@ nav a:hover {
     border-radius: 0;
 }
 
+.contact-info {
+    position: absolute; /* 절대 위치 지정 */
+    bottom: 0; /* 부모 요소의 아래쪽에 위치 */
+    font-size: 24px; /* 폰트 크기 조정 */
+    color: #ffffff; /* 텍스트 색상 변경 */
+}
 .b1 p {
 
     font-size: 30px;
