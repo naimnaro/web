@@ -209,7 +209,7 @@ nav a:hover {
     border-radius: 0;
 }
 
-.contact-info {
+.b1 .contact-info {
     position: absolute; /* 절대 위치 지정 */
     bottom: 0; /* 부모 요소의 아래쪽에 위치 */
     font-size: 24px; /* 폰트 크기 조정 */
@@ -368,6 +368,13 @@ nav a:hover {
         border-radius: 0;
     }
 
+    .b1 .contact-info {
+        position: absolute; /* 절대 위치 지정 */
+        bottom: 0; /* 부모 요소의 아래쪽에 위치 */
+        font-size: 12px; /* 폰트 크기 조정 */
+        color: #ffffff; /* 텍스트 색상 변경 */
+    }
+
     .b1 p {
         margin-top: 2%;
         font-size: 20px;
@@ -500,6 +507,7 @@ nav a:hover {
         text-shadow: 4px 4px 4px rgb(0, 0, 0);
         /* 가로, 세로, 흐림 정도, 색상 조절 */
     }
+
 
 }
 
@@ -668,6 +676,8 @@ nav a:hover {
         /* .b1을 2번째로 표시 */
         border-radius: 0;
     }
+
+
 
     .b1 p {
         margin-top: 2%;
