@@ -659,6 +659,7 @@ nav a:hover {
         margin-bottom: 0px;
         width: 50px;
         height: 50px;
+        border: 2px solid #c1c1c1;
     }
 
     .blog-image3 {
