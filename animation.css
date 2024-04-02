@@ -5,12 +5,65 @@
     animation-direction: alternate;
 }
 
-.blink2{
-    animation-name: blink2;
-    animation-duration: 500ms;
+/* */ 
+
+.blinkL{
+    animation-name: blinkL;
+    animation-duration: 2000ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+.blinkJ{
+    animation-name: blinkJ;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.blinkP{
+    animation-name: blinkP;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blinkL {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes blinkJ {
+    0% {
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes blinkP {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+/* */
 
 @keyframes blink {
     0% {
@@ -22,12 +75,3 @@
     }
 }
 
-@keyframes blink2 {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
