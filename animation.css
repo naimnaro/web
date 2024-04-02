@@ -12,6 +12,11 @@
     animation-direction: alternate;
 }
 
+.underline {
+    text-decoration: underline; /* 링크 텍스트에 밑줄 추가 */
+    /* 다른 스타일링 속성들 */
+}
+
 /* */ 
 
 
