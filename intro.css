@@ -217,9 +217,17 @@ nav a:hover {
     /* 텍스트를 왼쪽 정렬로 설정 */
 }
 
-.korean-text {
+.text {
     margin-top: 10px;
     font-size: 20px;
+    /* 적절한 크기로 조절 */
+    display: block;
+    /* 블록 레벨로 변경 */
+
+}
+.text2 {
+    margin-top: 10px;
+    font-size: 15px;
     /* 적절한 크기로 조절 */
     display: block;
     /* 블록 레벨로 변경 */
@@ -362,9 +370,17 @@ nav a:hover {
         /* 텍스트를 왼쪽 정렬로 설정 */
     }
 
-    .korean-text {
+    .text {
         margin-top: 4%;
         font-size: 15px;
+        /* 적절한 크기로 조절 */
+        display: block;
+        /* 블록 레벨로 변경 */
+
+    }
+    .text2 {
+        margin-top: 4%;
+        font-size: 12px;
         /* 적절한 크기로 조절 */
         display: block;
         /* 블록 레벨로 변경 */
@@ -450,9 +466,17 @@ nav a:hover {
         /* 텍스트를 왼쪽 정렬로 설정 */
     }
 
-    .korean-text {
+    .text {
         margin-top: 4%;
         font-size: 15px;
+        /* 적절한 크기로 조절 */
+        display: block;
+        /* 블록 레벨로 변경 */
+
+    }
+    .text2 {
+        margin-top: 4%;
+        font-size: 12px;
         /* 적절한 크기로 조절 */
         display: block;
         /* 블록 레벨로 변경 */
@@ -647,9 +671,17 @@ nav a:hover {
         /* 텍스트를 왼쪽 정렬로 설정 */
     }
 
-    .korean-text {
+    .text {
         margin-top: 4%;
         font-size: 15px;
+        /* 적절한 크기로 조절 */
+        display: block;
+        /* 블록 레벨로 변경 */
+
+    }
+    .text2 {
+        margin-top: 4%;
+        font-size: 12px;
         /* 적절한 크기로 조절 */
         display: block;
         /* 블록 레벨로 변경 */
@@ -726,9 +758,17 @@ nav a:hover {
         /* 텍스트를 왼쪽 정렬로 설정 */
     }
 
-    .korean-text {
+    .text {
         margin-top: 4%;
         font-size: 15px;
+        /* 적절한 크기로 조절 */
+        display: block;
+        /* 블록 레벨로 변경 */
+
+    }
+    .text2 {
+        margin-top: 4%;
+        font-size: 12px;
         /* 적절한 크기로 조절 */
         display: block;
         /* 블록 레벨로 변경 */
