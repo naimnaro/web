@@ -1,0 +1,1 @@
+<link rel="shortcut icon" href="./images/ico1.ico" type="image/x-icon">
