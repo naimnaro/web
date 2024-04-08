@@ -21,11 +21,11 @@ let dino = {
 //cactus
 let cactusArray = [];
 
-let cactus1Width = 30;
-let cactus2Width = 60;
-let cactus3Width = 90;
+let cactus1Width = 50;
+let cactus2Width = 100;
+let cactus3Width = 150;
 
-let cactusHeight = 70;
+let cactusHeight = 50;
 let cactusX = 1350;
 let cactusY = boardHeight - cactusHeight;
 
@@ -74,13 +74,13 @@ window.onload = function () {
     }
 
     cactus1Img = new Image();
-    cactus1Img.src = "./img/cactus1.png";
+    cactus1Img.src = "./img/spike.png";
 
     cactus2Img = new Image();
-    cactus2Img.src = "./img/cactus2.png";
+    cactus2Img.src = "./img/spike2.png";
 
     cactus3Img = new Image();
-    cactus3Img.src = "./img/cactus3.png";
+    cactus3Img.src = "./img/spike3.png";
 
     requestAnimationFrame(update);
     setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
@@ -135,7 +135,7 @@ function update() {
 function restartGame() {
     gameOver = false; // 게임 상태 초기화
     score = 0; // 점수 초기화
-    dinoImg.src = "./img/dino.png"; // 다시 살아난 공룡 이미지로 변경
+    dinoImg.src = "./img/cube2.png"; // 다시 살아난 공룡 이미지로 변경
     dino.y = dinoY; // 공룡 위치 초기화
     velocityY = -10; // 수직 속도 초기화
     cactusArray = []; // 선인장 배열 초기화

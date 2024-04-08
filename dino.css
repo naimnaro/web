@@ -1,12 +1,14 @@
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
 #board {
-    
-    background-color: lightgray;
+    position: relative;
+    background-color: rgb(169, 178, 255);
     border-bottom: 1px solid black;
+    background: url('./img/bg2.png'); 
+    background-size: cover;
 }
 
 #gameContainer {
@@ -14,20 +16,17 @@ body {
     display: inline-block;
 }
 
+#jumpBtn,
 #restartBtn {
     position: absolute;
-    width: 100px;
-    height: 30px;
     bottom: 10px;
     right: 10px;
-    z-index: 1; /* 버튼을 캔버스 위로 올립니다. */
+    width: 100px;
+    height: 30px;
 }
 
-#jumpBtn {
-    position: absolute;
-    width: 100px;
-    height: 30px;
-    bottom: 10px;
-    right: 10px;
-    z-index: 1; /* 버튼을 캔버스 위로 올립니다. */
+@media (max-width: 1200px) {
+    #gameContainer {
+        display: none;
+    }
 }
