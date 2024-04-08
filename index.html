@@ -9,6 +9,8 @@
     <meta property="og:image" content="images/banner3.png">
     <meta property="og:description" content="안녕하세요. 개발자 이중표 입니다" .>
     <link rel="shortcut icon" href="./images/ico1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dino.css">
+    <script src="dino.js"></script>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rubik+Scribble&display=swap"
@@ -86,7 +88,7 @@
                     <a href="intro.html"> Intro </a>
                     <a href="projects.html"> Projects </a>
                     <a href="hobby.html"> Hobby </a>
-                    <a href="blog.html""> Blog </a>
+                    <a href="blog.html"> Blog </a>
 
 
                 </nav>
@@ -104,6 +106,12 @@
 
         <div class="content-area">
             <h2> <br> Welcome indeed. </h2><br><br><br>
+            <br>
+            <div id="gameContainer">
+                <canvas id="board"></canvas>
+                <button id="jumpBtn">Jump</button>
+                <button id="restartBtn" style="display: none;">Restart</button> <!-- Hidden by default -->
+            </div>
 
 
             <div class="wrapper">
