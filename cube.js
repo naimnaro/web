@@ -92,7 +92,7 @@ function update() {
     if (gameOver) {
     
         context.clearRect(0, 0, board.width, board.height);
-        context.fillStyle = "black";
+        context.fillStyle = "white";
         context.font = "30px Arial";
         context.fillText("Game Over!", boardWidth / 2 - 80, boardHeight / 2 - 20);
         context.fillText(`점수: ${score}`, boardWidth / 2 - 60, boardHeight / 2 + 20);
@@ -126,7 +126,7 @@ function update() {
     }
 
     //score
-    context.fillStyle = "black";
+    context.fillStyle = "white";
     context.font = "20px courier";
     score++;
     context.fillText(score, 5, 20);
