@@ -57,7 +57,7 @@ window.onload = function () {
     restartBtn.addEventListener("click", restartGame);
     
 
-    jumpBtn.addEventListener("click", function() {
+    jumpBtn.addEventListener("mousedown", function() {
         if (dino.y == dinoY) {
             // 점프
             velocityY = -10;
