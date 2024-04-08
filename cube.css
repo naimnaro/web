@@ -26,8 +26,10 @@ body {
     height: 30px;
 }
 
+
 @media (max-width: 1200px) {
     #gameContainer {
         display: none;
+        
     }
 }
