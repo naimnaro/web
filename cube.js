@@ -34,7 +34,7 @@ let cactus2Img;
 let cactus3Img;
 
 //physics
-let velocityX = -8; //cactus moving left speed
+let velocityX = -6; //cactus moving left speed
 let velocityY = 0;
 let gravity = .4;
 
@@ -103,7 +103,7 @@ function update() {
     }
     context.clearRect(0, 0, board.width, board.height);
 
-    velocityX = -8 - Math.floor(score / 1000);
+    velocityX = -6 - Math.floor(score / 1000);
 
     //dino
     velocityY += gravity;
@@ -170,17 +170,17 @@ function placeCactus() {
 
     let placeCactusChance = Math.random(); //0 - 0.9999...
 
-    if (placeCactusChance > .90) { //10% you get cactus3
+    if (placeCactusChance > .70) { //10% you get cactus3
         cactus.img = cactus3Img;
         cactus.width = cactus3Width;
         cactusArray.push(cactus);
     }
-    else if (placeCactusChance > .70) { //30% you get cactus2
+    else if (placeCactusChance > .50) { //30% you get cactus2
         cactus.img = cactus2Img;
         cactus.width = cactus2Width;
         cactusArray.push(cactus);
     }
-    else if (placeCactusChance > .50) { //50% you get cactus1
+    else if (placeCactusChance > .30) { //50% you get cactus1
         cactus.img = cactus1Img;
         cactus.width = cactus1Width;
         cactusArray.push(cactus);
