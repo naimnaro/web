@@ -36,7 +36,7 @@ let cactus3Img;
 //physics
 let velocityX = -6; //cactus moving left speed
 let velocityY = 0;
-let gravity = .4;
+let gravity = .3;
 
 let gameOver = false;
 let score = 0;
@@ -60,7 +60,7 @@ window.onload = function () {
     jumpBtn.addEventListener("click", function() {
         if (dino.y == dinoY) {
             // 점프
-            velocityY = -11;
+            velocityY = -10;
         }
     });
     
@@ -149,7 +149,7 @@ function moveDino(e) {
 
     if ((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY) {
         //jump
-        velocityY = -11;
+        velocityY = -10;
     }
 }
 
