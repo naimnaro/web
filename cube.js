@@ -60,7 +60,7 @@ window.onload = function () {
     jumpBtn.addEventListener("click", function() {
         if (dino.y == dinoY) {
             // 점프
-            velocityY = -10;
+            velocityY = -11;
         }
     });
     
@@ -149,7 +149,7 @@ function moveDino(e) {
 
     if ((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY) {
         //jump
-        velocityY = -10;
+        velocityY = -11;
     }
 }
 
