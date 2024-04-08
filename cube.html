@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <title>Chrome Dinosaur Game</title>
-        <link rel="stylesheet" href="cube.css">
-        <script src="cube.js"></script>
-    </head>
-    <body>
-        <h1>Cube game</h1>
-        <div id="gameContainer">
-            <canvas id="board"></canvas>
-            <button id="jumpBtn">Jump</button>
-            <button id="restartBtn" style="display: none;">Restart</button> <!-- Hidden by default -->
-        </div>
-        
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <title>Chrome Dinosaur Game</title>
+    <link rel="stylesheet" href="cube.css">
+    <script src="cube.js">
+        var currentUrl = window.location.href;
+        var hiddenUrl = currentUrl.replace('cube.html', '');
+        window.history.pushState({}, document.title, hiddenUrl);
+    </script>
+
+</head>
+
+<body>
+    <h1>Cube game</h1>
+    <div id="gameContainer">
+        <canvas id="board"></canvas>
+        <button id="jumpBtn">Jump</button>
+        <button id="restartBtn" style="display: none;">Restart</button> <!-- Hidden by default -->
+    </div>
+
+</body>
+
 </html>
