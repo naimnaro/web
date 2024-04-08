@@ -26,10 +26,17 @@ body {
     height: 30px;
 }
 
+#mobile {
+    display:none;
+}
+
 
 @media (max-width: 1200px) {
     #gameContainer {
         display: none;
         
+    }
+    #mobile {
+        display:block;
     }
 }
