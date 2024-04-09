@@ -1,4 +1,5 @@
-//board
+
+//default screen size
 let board;
 let boardWidth = 1350;
 let boardHeight = 300;
@@ -44,41 +45,38 @@ let score = 0;
 let restartBtn;
 let jumpBtn
 
+let windowWidth = window.innerWidth;
+
+if (windowWidth < 1200) {
+    // PC 환경에서 실행할 코드
+    console.log("PC 환경입니다.");
+    boardWidth = 500;
+    boardHeight = 300;
+    // PC 환경에서 실행할 코드를 여기에 추가
+}
+
 window.onload = function () {
 
-    let windowWidth = window.innerWidth;
-    if (windowWidth >= 1200) {
-        // PC 환경에서 실행할 코드
-        console.log("PC 환경입니다.");
-        boardWidth = 1350;
-        boardHeight = 300;
-        // PC 환경에서 실행할 코드를 여기에 추가
-    } else {
-        // 모바일 환경에서 실행할 코드
-        boardWidth = 500;
-        boardHeight = 200;
-        console.log("모바일 환경입니다.");
-        // 모바일 환경에서 실행할 코드를 여기에 추가
-    }
+    
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
 
-    
+
     board = document.getElementById("board");
     board.height = boardHeight;
     board.width = boardWidth;
 
     context = board.getContext("2d"); //used for drawing on the board
     restartBtn.addEventListener("click", restartGame);
-    
 
-    jumpBtn.addEventListener("mousedown", function() {
+
+    jumpBtn.addEventListener("mousedown", function () {
         if (dino.y == dinoY) {
             // 점프
             velocityY = -10;
         }
     });
-    
+
 
 
     //draw initial dinosaur
@@ -105,7 +103,7 @@ window.onload = function () {
 function update() {
     requestAnimationFrame(update);
     if (gameOver) {
-    
+
         context.clearRect(0, 0, board.width, board.height);
         context.fillStyle = "white";
         context.font = "30px Arial";
