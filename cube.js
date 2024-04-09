@@ -12,12 +12,7 @@ let dinoX = 50;
 let dinoY = boardHeight - dinoHeight;
 let dinoImg;
 
-let dino = {
-    x: dinoX,
-    y: dinoY,
-    width: dinoWidth,
-    height: dinoHeight
-}
+
 
 //cactus
 let cactusArray = [];
@@ -44,7 +39,7 @@ let score = 0;
 
 let restartBtn;
 let jumpBtn
-
+let jumpforce = -10;
 let windowWidth = window.innerWidth;
 
 if (windowWidth < 1200) {
@@ -52,7 +47,26 @@ if (windowWidth < 1200) {
     console.log("PC 환경입니다.");
     boardWidth = 500;
     boardHeight = 300;
+    dinoWidth = 25;
+    dinoHeight = 25;
+    dinoX = 25;
+    dinoY = boardHeight - dinoHeight;
+    dinoImg;
+
+    cactus1Width = 25;
+    cactus2Width = 50;
+    cactus3Width = 75;
+    cactusHeight = 25;
+    cactusY = boardHeight - cactusHeight;
+    jumpforce = -6;
     // PC 환경에서 실행할 코드를 여기에 추가
+}
+
+let dino = {
+    x: dinoX,
+    y: dinoY,
+    width: dinoWidth,
+    height: dinoHeight
 }
 
 window.onload = function () {
@@ -73,7 +87,7 @@ window.onload = function () {
     jumpBtn.addEventListener("mousedown", function () {
         if (dino.y == dinoY) {
             // 점프
-            velocityY = -10;
+            velocityY = jumpforce;
         }
     });
 
@@ -162,7 +176,7 @@ function moveDino(e) {
 
     if ((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY) {
         //jump
-        velocityY = -10;
+        velocityY = jumpforce;
     }
 }
 
