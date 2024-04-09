@@ -45,6 +45,21 @@ let restartBtn;
 let jumpBtn
 
 window.onload = function () {
+
+    let windowWidth = window.innerWidth;
+    if (windowWidth >= 1200) {
+        // PC 환경에서 실행할 코드
+        console.log("PC 환경입니다.");
+        boardWidth = 1350;
+        boardHeight = 300;
+        // PC 환경에서 실행할 코드를 여기에 추가
+    } else {
+        // 모바일 환경에서 실행할 코드
+        boardWidth = 500;
+        boardHeight = 200;
+        console.log("모바일 환경입니다.");
+        // 모바일 환경에서 실행할 코드를 여기에 추가
+    }
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
 
