@@ -26,21 +26,3 @@ body {
     height: 30px;
 }
 
-<<<<<<< HEAD
-
-=======
-#mobile {
-    display:none;
-}
-
-
-@media (max-width: 1200px) {
-    #gameContainer {
-        display: none;
-        
-    }
-    #mobile {
-        display:block;
-    }
-}
->>>>>>> d60aeaf5c73da43d8064680f9e9ac9203086f4c2
