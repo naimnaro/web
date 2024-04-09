@@ -213,7 +213,7 @@ function placeCactus() {
         cactusArray.push(cactus);
     }
 
-    if (cactusArray.length > 5) {
+    if (cactusArray.length > 10) {
         cactusArray.shift(); //remove the first element from the array so that the array doesn't constantly grow
     }
 }
