@@ -43,7 +43,7 @@ let mobile_state = false;
 let restartBtn;
 let jumpBtn
 let mobileBtn
-let jumpforce = -8;
+let jumpforce = -10;
 let windowWidth = window.innerWidth;
 
 if (windowWidth < 1000) {
@@ -146,7 +146,7 @@ function update() {
     }
     context.clearRect(0, 0, board.width, board.height);
 
-    velocityX = -3 - Math.floor(score / 2000);
+    velocityX = -4 - Math.floor(score / 2000);
 
     //dino
     velocityY += gravity;
