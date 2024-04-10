@@ -51,7 +51,7 @@ if (windowWidth < 1000) {
     pc_state = false;
     // PC 환경에서 실행할 코드
     console.log("PC 환경입니다.");
-    boardWidth = 400;
+    boardWidth = 350;
     boardHeight = 300;
     dinoWidth = 25;
     dinoHeight = 25;
@@ -183,7 +183,7 @@ function update() {
     context.fillStyle = "white";
     context.font = "20px 'Pixelify Sans', sans-serif";
     score++;
-    context.fillText(score, boardWidth - 40, 25);
+    context.fillText(score, boardWidth - 50, 25);
 }
 
 function restartGame() {
