@@ -30,7 +30,7 @@ let cactus2Img;
 let cactus3Img;
 
 //physics
-let velocityX = -5; //cactus moving left speed
+let velocityX = -10; //cactus moving left speed
 let velocityY = 0;
 let gravity = .3;
 
@@ -52,6 +52,7 @@ if (windowWidth < 1200) {
     dinoX = 25;
     dinoY = boardHeight - dinoHeight;
     dinoImg;
+   
 
     cactus1Width = 25;
     cactus2Width = 50;
