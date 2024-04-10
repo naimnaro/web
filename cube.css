@@ -26,3 +26,30 @@ body {
     height: 30px;
 }
 
+.pixelify-sans-uniquifier {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.text1 {
+    font-size: 30px;
+}
+
+@media (max-width: 1000px){
+
+    .title {
+        font-size: 30px;
+    }
+
+    .text1 {
+        font-size: 15px;
+    }
+}
+
+

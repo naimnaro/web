@@ -7,6 +7,11 @@
     <meta property="og:image" content="img/thum1.png">
     <title>cube game</title>
     <link rel="stylesheet" href="cube.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
     <script src="cube.js"></script>
     <script>
         var currentUrl = window.location.href;
@@ -17,18 +22,18 @@
 </head>
 
 <body>
-    
-    
+
+
     <div id="gameContainer">
-        <h1  style="color: white;" >Cube game</h1>
+        <h1 style="color: white;" class="pixelify-sans-uniquifier title">Cube game</h1>
         <canvas id="board"></canvas>
-        <button id="jumpBtn">Jump</button>
-        <button id="restartBtn" style="display: none;">Restart</button> <!-- Hidden by default -->
+        <button id="jumpBtn" class="pixelify-sans-uniquifier">Jump</button>
+        <button id="restartBtn" class="pixelify-sans-uniquifier" style="display: none;">Restart</button> <!-- Hidden by default -->
     </div>
     <div>
-        <p style="color:white;"> press space to jump or click jump button</p>
+        <p style="color:white;" class="pixelify-sans-uniquifier text1"> press space to jump or click jump button</p>
     </div>
-    
+
 
 
 </body>

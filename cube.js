@@ -121,7 +121,7 @@ function update() {
 
         context.clearRect(0, 0, board.width, board.height);
         context.fillStyle = "white";
-        context.font = "30px Arial";
+        context.font = "30px 'Pixelify Sans', sans-serif";
         context.fillText("Game Over!", boardWidth / 2 - 80, boardHeight / 2 - 20);
         context.fillText(`점수: ${score}`, boardWidth / 2 - 60, boardHeight / 2 + 20);
         restartBtn.style.display = "block"; // 게임이 종료되면 버튼 표시
