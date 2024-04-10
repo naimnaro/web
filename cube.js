@@ -11,6 +11,7 @@ let dinoHeight = 50;
 let dinoX = 50;
 let dinoY = boardHeight - dinoHeight;
 let dinoImg;
+let dinoImg2;
 
 
 
@@ -115,6 +116,11 @@ window.onload = function () {
     dinoImg.src = "./img/cube2.png";
     dinoImg.onload = function () {
         context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
+    }
+    dinoImg2 = new Image();
+    dinoImg2.src = "./img/cube3.png";
+    dinoImg2.onload = function () {
+        context.drawImage(dinoImg2, dino.x, dino.y, dino.width, dino.height);
     }
 
     cactus1Img = new Image();
