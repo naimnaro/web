@@ -57,7 +57,9 @@ if (windowWidth < 1000) {
     dinoHeight = 25;
     dinoX = 25;
     dinoY = boardHeight - dinoHeight;
+    gravity = .2;
     dinoImg;
+
    
 
     cactus1Width = 25;
@@ -145,8 +147,17 @@ function update() {
         return;
     }
     context.clearRect(0, 0, board.width, board.height);
+    
 
-    velocityX = -4 - (Math.floor(score / 1000)/10);
+    if (pc_state === true)
+    {
+        velocityX = -4 - (Math.floor(score / 1000)/10);
+    }
+    else if (mobile_state === true)
+    {
+        velocityX = -2 - (Math.floor(score / 1000)/10);
+    }
+
 
     //dino
     velocityY += gravity;
