@@ -146,7 +146,7 @@ function update() {
     }
     context.clearRect(0, 0, board.width, board.height);
 
-    velocityX = -2 - Math.floor(score / 1000);
+    velocityX = -3 - Math.floor(score / 2000);
 
     //dino
     velocityY += gravity;
