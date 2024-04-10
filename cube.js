@@ -155,9 +155,9 @@ function update() {
 
     //score
     context.fillStyle = "white";
-    context.font = "20px courier";
+    context.font = "20px 'Pixelify Sans', sans-serif";
     score++;
-    context.fillText(score, 5, 20);
+    context.fillText(score, boardWidth - 40, 25);
 }
 
 function restartGame() {
