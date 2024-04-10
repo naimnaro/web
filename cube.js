@@ -39,6 +39,7 @@ let score = 0;
 
 let restartBtn;
 let jumpBtn
+let mobileBtn
 let jumpforce = -8;
 let windowWidth = window.innerWidth;
 
@@ -75,6 +76,7 @@ window.onload = function () {
     
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
+    mobileBtn = document.getElementById("mobileBtn");
 
 
     board = document.getElementById("board");
@@ -86,6 +88,13 @@ window.onload = function () {
 
 
     jumpBtn.addEventListener("mousedown", function () {
+        if (dino.y == dinoY) {
+            // 점프
+            velocityY = jumpforce;
+        }
+    });
+
+    mobileBtn.addEventListener("mousedown", function () {
         if (dino.y == dinoY) {
             // 점프
             velocityY = jumpforce;
@@ -126,6 +135,7 @@ function update() {
         context.fillText(`점수: ${score}`, boardWidth / 2 - 60, boardHeight / 2 + 20);
         restartBtn.style.display = "block"; // 게임이 종료되면 버튼 표시
         jumpBtn.style.display = "none";
+        mobileBtn.style.display = "none";
 
         return;
     }
@@ -169,6 +179,7 @@ function restartGame() {
     cactusArray = []; // 선인장 배열 초기화
     restartBtn.style.display = "none"; // 재시작 버튼 숨기기
     jumpBtn.style.display = "block";
+    mobileBtn.style.display = "block";
 }
 function moveDino(e) {
     if (gameOver) {
