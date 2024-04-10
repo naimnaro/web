@@ -197,17 +197,17 @@ function placeCactus() {
 
     let placeCactusChance = Math.random(); //0 - 0.9999...
 
-    if (placeCactusChance > .80) { //10% you get cactus3
+    if (placeCactusChance > .90) { //10% you get cactus3
         cactus.img = cactus3Img;
         cactus.width = cactus3Width;
         cactusArray.push(cactus);
     }
-    else if (placeCactusChance > .60) { //30% you get cactus2
+    else if (placeCactusChance > .70) { //30% you get cactus2
         cactus.img = cactus2Img;
         cactus.width = cactus2Width;
         cactusArray.push(cactus);
     }
-    else if (placeCactusChance > .30) { //50% you get cactus1
+    else if (placeCactusChance > .50) { //50% you get cactus1
         cactus.img = cactus1Img;
         cactus.width = cactus1Width;
         cactusArray.push(cactus);
