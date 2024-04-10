@@ -30,7 +30,7 @@ let cactus2Img;
 let cactus3Img;
 
 //physics
-let velocityX = -6; //cactus moving left speed
+let velocityX = -5; //cactus moving left speed
 let velocityY = 0;
 let gravity = .3;
 
