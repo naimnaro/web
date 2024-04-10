@@ -39,7 +39,7 @@ let score = 0;
 
 let restartBtn;
 let jumpBtn
-let jumpforce = -10;
+let jumpforce = -8;
 let windowWidth = window.innerWidth;
 
 if (windowWidth < 1200) {
