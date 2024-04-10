@@ -37,6 +37,9 @@ let gravity = .3;
 let gameOver = false;
 let score = 0;
 
+let pc_state = true;
+let mobile_state = false;
+
 let restartBtn;
 let jumpBtn
 let mobileBtn
@@ -44,6 +47,8 @@ let jumpforce = -8;
 let windowWidth = window.innerWidth;
 
 if (windowWidth < 1000) {
+    mobile_state = true;
+    pc_state = false;
     // PC 환경에서 실행할 코드
     console.log("PC 환경입니다.");
     boardWidth = 400;
@@ -178,8 +183,17 @@ function restartGame() {
     velocityY = -10; // 수직 속도 초기화
     cactusArray = []; // 선인장 배열 초기화
     restartBtn.style.display = "none"; // 재시작 버튼 숨기기
-    jumpBtn.style.display = "block";
-    mobileBtn.style.display = "block";
+
+    if (pc_state === true)
+    {
+        jumpBtn.style.display = "block";
+    }
+    else if (mobile_state === true)
+    {
+        mobileBtn.style.display = "block";
+    }
+    
+    
 }
 function moveDino(e) {
     if (gameOver) {
