@@ -42,10 +42,10 @@ let jumpBtn
 let jumpforce = -8;
 let windowWidth = window.innerWidth;
 
-if (windowWidth < 1200) {
+if (windowWidth < 1000) {
     // PC 환경에서 실행할 코드
     console.log("PC 환경입니다.");
-    boardWidth = 500;
+    boardWidth = 400;
     boardHeight = 300;
     dinoWidth = 25;
     dinoHeight = 25;
