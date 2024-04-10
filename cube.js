@@ -30,7 +30,7 @@ let cactus2Img;
 let cactus3Img;
 
 //physics
-let velocityX = -10; //cactus moving left speed
+let velocityX; //cactus moving left speed
 let velocityY = 0;
 let gravity = .3;
 
@@ -131,7 +131,7 @@ function update() {
     }
     context.clearRect(0, 0, board.width, board.height);
 
-    velocityX = -6 - Math.floor(score / 1000);
+    velocityX = -4 - Math.floor(score / 1000);
 
     //dino
     velocityY += gravity;
