@@ -58,7 +58,7 @@ if (windowWidth < 1000) {
     dinoX = 25;
     dinoY = boardHeight - dinoHeight;
     gravity = .2;
-    dinoImg;
+    
 
    
 
