@@ -33,7 +33,7 @@ let cactus3Img;
 //physics
 let velocityX; //cactus moving left speed
 let velocityY = 0;
-let gravity = .3;
+let gravity = .2;
 
 let gameOver = false;
 let score = 0;
@@ -44,7 +44,7 @@ let mobile_state = false;
 let restartBtn;
 let jumpBtn
 let mobileBtn
-let jumpforce = -10;
+let jumpforce = -8;
 let windowWidth = window.innerWidth;
 
 if (windowWidth < 1000) {
@@ -58,7 +58,7 @@ if (windowWidth < 1000) {
     dinoHeight = 25;
     dinoX = 25;
     dinoY = boardHeight - dinoHeight;
-    gravity = .2;
+    gravity = .1;
     
 
    
@@ -68,7 +68,7 @@ if (windowWidth < 1000) {
     cactus3Width = 75;
     cactusHeight = 25;
     cactusY = boardHeight - cactusHeight;
-    jumpforce = -6;
+    jumpforce = -4;
     // PC 환경에서 실행할 코드를 여기에 추가
 }
 
