@@ -156,6 +156,7 @@ window.onload = function () {
 }
 
 function update() {
+    bgm.play();
     requestAnimationFrame(update);
     if (gameOver) {
 
