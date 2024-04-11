@@ -33,7 +33,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 150px;
+    width: 200px;
     height: 30px;
     z-index: 1; /* 다른 요소 위에 표시되도록 설정 */
 }

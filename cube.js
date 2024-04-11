@@ -4,6 +4,9 @@ let board;
 let boardWidth = 1350;
 let boardHeight = 300;
 let context;
+let bgm;
+
+
 
 //dino
 let dinoWidth = 50;
@@ -95,7 +98,9 @@ let dino = {
 
 window.onload = function () {
 
-    
+   
+    bgm = document.getElementById("bgm");
+    bgm.play();
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
     mobileBtn = document.getElementById("mobileBtn");
@@ -108,6 +113,8 @@ window.onload = function () {
     context = board.getContext("2d"); //used for drawing on the board
     restartBtn.addEventListener("click", restartGame);
     changeBtn.addEventListener("click", changeTheme);
+    
+
 
 
     jumpBtn.addEventListener("mousedown", function () {

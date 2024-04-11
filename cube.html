@@ -12,12 +12,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pixelify+Sans:wght@400..700&display=swap"
         rel="stylesheet">
+    <audio id="bgm" autoplay loop>
+        <source src="./img/cetus.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <script src="cube.js"></script>
     <script>
         var currentUrl = window.location.href;
         var hiddenUrl = currentUrl.replace('cube.html', 'cube');
         window.history.pushState({}, document.title, hiddenUrl);
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var bgm = document.getElementById("bgm");
+            bgm.play();
+        });
     </script>
+
+
 
 </head>
 
@@ -26,11 +37,12 @@
     <h1 style="color: white;" class="pixelify-sans-uniquifier title">Cube game</h1>
 
     <div id="gameContainer">
-        
+
         <canvas id="board"></canvas>
         <button id="jumpBtn" class="pixelify-sans-uniquifier pcjump">Jump</button>
-        <button id="restartBtn" class="pixelify-sans-uniquifier" style="display: none;">Restart</button> <!-- Hidden by default -->
-        <button id="changeBtn" class="pixelify-sans-uniquifier" onclick="changeSkin()"> change theme -> </button> 
+        <button id="restartBtn" class="pixelify-sans-uniquifier" style="display: none;">Restart</button>
+        <!-- Hidden by default -->
+        <button id="changeBtn" class="pixelify-sans-uniquifier" onclick="changeSkin()"> change theme -> </button>
     </div>
     <div>
         <p style="color:white;" class="pixelify-sans-uniquifier text1"> press space to jump or click jump button</p>
