@@ -46,6 +46,13 @@ let jumpBtn
 let mobileBtn
 let jumpforce = -8;
 let windowWidth = window.innerWidth;
+let skinIndex = 0;
+
+const skins = [
+    "./img/cube.png",
+    "./img/cube2.png"
+    
+];
 
 if (windowWidth < 1000) {
     mobile_state = true;
@@ -93,6 +100,7 @@ window.onload = function () {
 
     context = board.getContext("2d"); //used for drawing on the board
     restartBtn.addEventListener("click", restartGame);
+    changeBtn.addEventListener("click", changeTheme);
 
 
     jumpBtn.addEventListener("mousedown", function () {
@@ -113,18 +121,14 @@ window.onload = function () {
 
     //draw initial dinosaur
     dinoImg = new Image();
-    dinoImg.src = "./img/cube2.png";
+    dinoImg.src = "./img/cube.png";
     dinoImg.onload = function () {
         context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
     }
-    dinoImg2 = new Image();
-    dinoImg2.src = "./img/cube3.png";
-    dinoImg2.onload = function () {
-        context.drawImage(dinoImg2, dino.x, dino.y, dino.width, dino.height);
-    }
+    
 
     cactus1Img = new Image();
-    cactus1Img.src = "./img/spike.png";
+    cactus1Img.src = "./img/spike.png"; 
 
     cactus2Img = new Image();
     cactus2Img.src = "./img/spike2.png";
@@ -268,4 +272,9 @@ function detectCollision(a, b) {
         a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
 }
 
-
+function changeTheme() {
+    // 현재 skinIndex를 증가시키고 배열 길이로 나눈 나머지를 새로운 skinIndex로 설정
+    skinIndex = (skinIndex + 1) % skins.length;
+    // 선택된 스킨의 이미지 경로를 dinoImg에 할당
+    dinoImg.src = skins[skinIndex];
+}
