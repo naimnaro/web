@@ -59,6 +59,8 @@ const bgs = [
     "./img/bg2.png"
 ];
 
+const textcolor = ["black", "white"];
+
 if (windowWidth < 1000) {
     mobile_state = true;
     pc_state = false;
@@ -151,7 +153,7 @@ function update() {
     if (gameOver) {
 
         context.clearRect(0, 0, board.width, board.height);
-        context.fillStyle = "white";
+        context.fillStyle = textcolor[skinIndex];
         context.font = "30px 'Pixelify Sans', sans-serif";
         context.fillText("Game Over!", boardWidth / 2 - 80, boardHeight / 2 - 20);
         context.fillText(`점수: ${score}`, boardWidth / 2 - 60, boardHeight / 2 + 20);
@@ -195,7 +197,7 @@ function update() {
     }
 
     //score
-    context.fillStyle = "white";
+    context.fillStyle = textcolor[skinIndex];
     context.font = "20px 'Pixelify Sans', sans-serif";
     score++;
     context.fillText(score, boardWidth - 50, 25);
@@ -283,4 +285,5 @@ function changeTheme() {
     // 선택된 스킨의 이미지 경로를 dinoImg에 할당
     dinoImg.src = skins[skinIndex];
     board.style.backgroundImage = `url('${bgs[skinIndex]}')`;
+    context.fillStyle = textcolor[skinIndex];
 }
