@@ -211,6 +211,7 @@ function update() {
 }
 
 function restartGame() {
+    bgm.play();
     gameOver = false; // 게임 상태 초기화
     score = 0; // 점수 초기화
     dinoImg.src = skins[skinIndex]; // 다시 살아난 공룡 이미지로 변경
