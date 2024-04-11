@@ -54,6 +54,11 @@ const skins = [
     
 ];
 
+const bgs = [
+    "./img/bg.jpg",
+    "./img/bg2.png"
+];
+
 if (windowWidth < 1000) {
     mobile_state = true;
     pc_state = false;
@@ -199,7 +204,7 @@ function update() {
 function restartGame() {
     gameOver = false; // 게임 상태 초기화
     score = 0; // 점수 초기화
-    dinoImg.src = "./img/cube2.png"; // 다시 살아난 공룡 이미지로 변경
+    dinoImg.src = skins[skinIndex]; // 다시 살아난 공룡 이미지로 변경
     dino.y = dinoY; // 공룡 위치 초기화
     velocityY = -10; // 수직 속도 초기화
     cactusArray = []; // 선인장 배열 초기화
@@ -277,4 +282,5 @@ function changeTheme() {
     skinIndex = (skinIndex + 1) % skins.length;
     // 선택된 스킨의 이미지 경로를 dinoImg에 할당
     dinoImg.src = skins[skinIndex];
+    board.style.backgroundImage = `url('${bgs[skinIndex]}')`;
 }

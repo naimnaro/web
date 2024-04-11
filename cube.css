@@ -8,7 +8,7 @@ body {
     position: relative;
     background-color: rgb(169, 178, 255);
     border-bottom: 1px solid black;
-    background: url('./img/bg2.png'); 
+    background: url('./img/bg.jpg'); 
     background-size: cover;
     
 }
