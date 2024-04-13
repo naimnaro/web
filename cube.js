@@ -101,7 +101,7 @@ window.onload = function () {
    
     bgm = document.getElementById("bgm");
     //bgm.currentTime = 0;
-    bgm.play();
+    
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
     mobileBtn = document.getElementById("mobileBtn");
@@ -154,6 +154,7 @@ window.onload = function () {
     requestAnimationFrame(update);
     setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
     document.addEventListener("keydown", moveDino);
+    
 }
 
 function update() {
@@ -185,6 +186,8 @@ function update() {
     }
 
 
+
+    bgm.play();
     //dino
     velocityY += gravity;
     dino.y = Math.min(dino.y + velocityY, dinoY); //apply gravity to current dino.y, making sure it doesn't exceed the ground
