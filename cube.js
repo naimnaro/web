@@ -62,6 +62,8 @@ const bgs = [
     "./img/bg2.png"
 ];
 
+
+
 const textcolor = ["black", "white"];
 
 if (windowWidth < 1000) {
