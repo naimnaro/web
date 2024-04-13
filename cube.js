@@ -100,8 +100,8 @@ window.onload = function () {
 
 
     bgm = document.getElementById("bgm");
-    //bgm.currentTime = 0;
-
+    bgm.currentTime = 0;
+   
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
     mobileBtn = document.getElementById("mobileBtn");
@@ -177,6 +177,7 @@ function update() {
 
     requestAnimationFrame(update);
     if (gameOver) {
+        bgm.currentTime = 0;
         bgm.pause();
         context.clearRect(0, 0, board.width, board.height);
         context.fillStyle = textcolor[skinIndex];
