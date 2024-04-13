@@ -100,7 +100,7 @@ window.onload = function () {
 
    
     bgm = document.getElementById("bgm");
-    bgm.currentTime = 0;
+    //bgm.currentTime = 0;
     bgm.play();
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
@@ -157,8 +157,7 @@ window.onload = function () {
 }
 
 function update() {
-    bgm.currentTime = 0;
-    bgm.play();
+    
     requestAnimationFrame(update);
     if (gameOver) {
         bgm.pause();
@@ -214,7 +213,7 @@ function update() {
 }
 
 function restartGame() {
-    bgm.currentTime = 0;
+    //bgm.currentTime = 0;
     bgm.play();
     gameOver = false; // 게임 상태 초기화
     score = 0; // 점수 초기화
