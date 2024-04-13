@@ -114,7 +114,7 @@ window.onload = function () {
     context = board.getContext("2d"); //used for drawing on the board
     restartBtn.addEventListener("click", restartGame);
     changeBtn.addEventListener("click", changeTheme);
-    
+    bgm.play();
 
 
 
@@ -154,6 +154,8 @@ window.onload = function () {
     requestAnimationFrame(update);
     setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
     document.addEventListener("keydown", moveDino);
+
+    
     
 }
 
@@ -175,7 +177,7 @@ function update() {
     }
     context.clearRect(0, 0, board.width, board.height);
     
-
+    
     if (pc_state === true)
     {
         velocityX = -4 - (Math.floor(score / 1000)/10);
@@ -187,7 +189,7 @@ function update() {
 
 
 
-    bgm.play();
+    
     //dino
     velocityY += gravity;
     dino.y = Math.min(dino.y + velocityY, dinoY); //apply gravity to current dino.y, making sure it doesn't exceed the ground
@@ -238,6 +240,7 @@ function restartGame() {
     
 }
 function moveDino(e) {
+    
     if (gameOver) {
         return;
     }
