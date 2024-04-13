@@ -159,7 +159,7 @@ function update() {
     bgm.play();
     requestAnimationFrame(update);
     if (gameOver) {
-
+        bgm.pause();
         context.clearRect(0, 0, board.width, board.height);
         context.fillStyle = textcolor[skinIndex];
         context.font = "30px 'Pixelify Sans', sans-serif";
