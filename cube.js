@@ -85,7 +85,7 @@ if (windowWidth < 1000) {
     cactus3Width = 75;
     cactusHeight = 25;
     cactusY = boardHeight - cactusHeight;
-    jumpforce = -6;
+    jumpforce = -5;
     // PC 환경에서 실행할 코드를 여기에 추가
 }
 
@@ -184,7 +184,7 @@ function update() {
     }
     else if (mobile_state === true)
     {
-        velocityX = -4 - (Math.floor(score / 1000)/10);
+        velocityX = -6 - (Math.floor(score / 1000)/10);
     }
 
 
