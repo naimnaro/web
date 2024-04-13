@@ -119,7 +119,7 @@ window.onload = function () {
 
 
 
-    jumpBtn.addEventListener("click", function () {
+    jumpBtn.addEventListener("mousedown", function () {
         
         if (dino.y == dinoY) {
             // 점프
