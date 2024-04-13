@@ -184,7 +184,7 @@ function update() {
     }
     else if (mobile_state === true)
     {
-        velocityX = -6 - (Math.floor(score / 1000)/10);
+        velocityX = -5 - (Math.floor(score / 1000)/10);
     }
 
 
