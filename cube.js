@@ -50,11 +50,11 @@ let mobileBtn
 let jumpforce = -8;
 let windowWidth = window.innerWidth;
 let skinIndex = 0;
-
+let changeBtn;
 const skins = [
     "./img/cube.png",
     "./img/cube2.png"
-    
+
 ];
 
 const bgs = [
@@ -76,9 +76,9 @@ if (windowWidth < 1000) {
     dinoX = 25;
     dinoY = boardHeight - dinoHeight;
     gravity = .2;
-    
 
-   
+
+
 
     cactus1Width = 25;
     cactus2Width = 50;
@@ -98,38 +98,52 @@ let dino = {
 
 window.onload = function () {
 
-   
+
     bgm = document.getElementById("bgm");
     //bgm.currentTime = 0;
-    
+
     restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
     jumpBtn = document.getElementById("jumpBtn");
     mobileBtn = document.getElementById("mobileBtn");
-
-
+    changeBtn = document.getElementById("changeBtn");
     board = document.getElementById("board");
+
     board.height = boardHeight;
     board.width = boardWidth;
 
     context = board.getContext("2d"); //used for drawing on the board
     restartBtn.addEventListener("click", restartGame);
-    changeBtn.addEventListener("click", changeTheme);
+
+
     bgm.play();
 
 
 
-    jumpBtn.addEventListener("mousedown", function () {
+    jumpBtn.addEventListener("click", function () {
+        
         if (dino.y == dinoY) {
             // 점프
             velocityY = jumpforce;
         }
+        jumpBtn.blur(); 
     });
 
+    
+
     mobileBtn.addEventListener("mousedown", function () {
+        
         if (dino.y == dinoY) {
             // 점프
             velocityY = jumpforce;
         }
+        mobileBtn.blur(); 
+    });
+
+    changeBtn.addEventListener("click", function (event) {
+        event.preventDefault(); // 기본 이벤트 중지
+        changeTheme();
+        changeBtn.blur(); 
+       
     });
 
 
@@ -140,10 +154,10 @@ window.onload = function () {
     dinoImg.onload = function () {
         context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
     }
-    
+
 
     cactus1Img = new Image();
-    cactus1Img.src = "./img/spike.png"; 
+    cactus1Img.src = "./img/spike.png";
 
     cactus2Img = new Image();
     cactus2Img.src = "./img/spike2.png";
@@ -155,12 +169,12 @@ window.onload = function () {
     setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
     document.addEventListener("keydown", moveDino);
 
-    
-    
+
+
 }
 
 function update() {
-    
+
     requestAnimationFrame(update);
     if (gameOver) {
         bgm.pause();
@@ -176,20 +190,18 @@ function update() {
         return;
     }
     context.clearRect(0, 0, board.width, board.height);
-    
-    
-    if (pc_state === true)
-    {
-        velocityX = -4 - (Math.floor(score / 1000)/10);
+
+
+    if (pc_state === true) {
+        velocityX = -4 - (Math.floor(score / 1000) / 10);
     }
-    else if (mobile_state === true)
-    {
-        velocityX = -5 - (Math.floor(score / 1000)/10);
+    else if (mobile_state === true) {
+        velocityX = -5 - (Math.floor(score / 1000) / 10);
     }
 
 
 
-    
+
     //dino
     velocityY += gravity;
     dino.y = Math.min(dino.y + velocityY, dinoY); //apply gravity to current dino.y, making sure it doesn't exceed the ground
@@ -228,19 +240,17 @@ function restartGame() {
     cactusArray = []; // 선인장 배열 초기화
     restartBtn.style.display = "none"; // 재시작 버튼 숨기기
 
-    if (pc_state === true)
-    {
+    if (pc_state === true) {
         jumpBtn.style.display = "block";
     }
-    else if (mobile_state === true)
-    {
+    else if (mobile_state === true) {
         mobileBtn.style.display = "block";
     }
-    
-    
+
+
 }
 function moveDino(e) {
-    
+
     if (gameOver) {
         return;
     }
@@ -297,6 +307,7 @@ function detectCollision(a, b) {
 }
 
 function changeTheme() {
+    console.log("changeTheme");
     // 현재 skinIndex를 증가시키고 배열 길이로 나눈 나머지를 새로운 skinIndex로 설정
     skinIndex = (skinIndex + 1) % skins.length;
     // 선택된 스킨의 이미지 경로를 dinoImg에 할당
