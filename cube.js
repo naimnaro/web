@@ -75,7 +75,7 @@ if (windowWidth < 1000) {
     dinoHeight = 25;
     dinoX = 25;
     dinoY = boardHeight - dinoHeight;
-    gravity = .1;
+    gravity = .2;
     
 
    
@@ -85,7 +85,7 @@ if (windowWidth < 1000) {
     cactus3Width = 75;
     cactusHeight = 25;
     cactusY = boardHeight - cactusHeight;
-    jumpforce = -4;
+    jumpforce = -6;
     // PC 환경에서 실행할 코드를 여기에 추가
 }
 
