@@ -234,7 +234,7 @@ function update() {
     context.fillStyle = textcolor[skinIndex];
     context.font = "20px 'Pixelify Sans', sans-serif";
     score++;
-    context.fillText(score, boardWidth - 50, 25);
+    context.fillText(score, boardWidth - 60, 30);
 }
 
 // restartGame when died
