@@ -4,11 +4,11 @@ let board;
 let boardWidth = 1350;
 let boardHeight = 300;
 let context;
+
+// background music
 let bgm;
 
-
-
-//dino
+//cube
 let cubeWidth = 50;
 let cubeHeight = 50;
 let cubeX = 50;
@@ -51,26 +51,33 @@ let jumpforce = -8;
 let windowWidth = window.innerWidth;
 let skinIndex = 0;
 let changeBtn;
+
+// theme-playercube
 const skins = [
     "./img/cube.png",
     "./img/cube2.png"
 
 ];
 
+// theme-background
 const bgs = [
     "./img/bg.jpg",
     "./img/bg2.png"
 ];
 
 
+// theme - textcolor
 
 const textcolor = ["black", "white"];
 
+
+// mobile resolution
 if (windowWidth < 1000) {
     mobile_state = true;
     pc_state = false;
-    // PC 환경에서 실행할 코드
-    console.log("PC 환경입니다.");
+
+
+    // mobile screen size
     boardWidth = 350;
     boardHeight = 300;
     cubeWidth = 25;
@@ -79,16 +86,14 @@ if (windowWidth < 1000) {
     cubeY = boardHeight - cubeHeight;
     gravity = .2;
 
-
-
-
+    // mobile spike size ( pc 1/2 )
     spike1Width = 25;
     spike2Width = 50;
     spike3Width = 75;
     spikeHeight = 25;
     spikeY = boardHeight - spikeHeight;
     jumpforce = -5;
-    // PC 환경에서 실행할 코드를 여기에 추가
+    
 }
 
 let cube = {
@@ -104,7 +109,7 @@ window.onload = function () {
     bgm = document.getElementById("bgm");
     bgm.currentTime = 0;
    
-    restartBtn = document.getElementById("restartBtn"); // 버튼 요소 찾기
+    restartBtn = document.getElementById("restartBtn"); 
     jumpBtn = document.getElementById("jumpBtn");
     mobileBtn = document.getElementById("mobileBtn");
     changeBtn = document.getElementById("changeBtn");
@@ -150,7 +155,7 @@ window.onload = function () {
 
 
 
-    //draw initial dinosaur
+    //draw cube
     cubeImg = new Image();
     cubeImg.src = "./img/cube.png";
     cubeImg.onload = function () {
@@ -205,7 +210,7 @@ function update() {
 
 
 
-    //dino
+    //cube
     velocityY += gravity;
     cube.y = Math.min(cube.y + velocityY, cubeY); //apply gravity to current cube.y, making sure it doesn't exceed the ground
     context.drawImage(cubeImg, cube.x, cube.y, cube.width, cube.height);
@@ -216,9 +221,9 @@ function update() {
         spike.x += velocityX;
         context.drawImage(spike.img, spike.x, spike.y, spike.width, spike.height);
 
-        if (detectCollision(dino, spike)) {
+        if (detectCollision(cube, spike)) {
             gameOver = true;
-            cubeImg.src = "./img/dino-dead.png";
+            cubeImg.src = "";
             cubeImg.onload = function () {
                 context.drawImage(cubeImg, cube.x, cube.y, cube.width, cube.height);
             }
@@ -232,17 +237,16 @@ function update() {
     context.fillText(score, boardWidth - 50, 25);
 }
 
+// restartGame when died
 function restartGame() {
-    //bgm.currentTime = 0;
     
-    bgm.play();
-    gameOver = false; // 게임 상태 초기화
-    score = 0; // 점수 초기화
-    cubeImg.src = skins[skinIndex]; // 다시 살아난 공룡 이미지로 변경
-    cube.y = cubeY; // 공룡 위치 초기화
-    velocityY = -10; // 수직 속도 초기화
-    spikeArray = []; // 선인장 배열 초기화
-    restartBtn.style.display = "none"; // 재시작 버튼 숨기기
+    bgm.play();  // restart bgm also 
+    gameOver = false; // state 
+    score = 0; // score reset 
+    cubeImg.src = skins[skinIndex]; 
+    cube.y = cubeY; // cube position reset 
+    spikeArray = []; // spike arrayreset 
+    restartBtn.style.display = "none"; // hide restartBtn 
 
     if (pc_state === true) {
         jumpBtn.style.display = "block";
