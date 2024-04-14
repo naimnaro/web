@@ -20,13 +20,21 @@ body {
 }
 
 #jumpBtn,
-#restartBtn,
-#mobileBtn {
+#restartBtn{
     position: absolute;
     bottom: 10px;
     right: 10px;
     width: 100px;
     height: 30px;
+}
+
+#mobileBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 40px;
+    margin: 5px;
 }
 
 #changeBtn {
@@ -53,6 +61,9 @@ body {
 .text1 {
     font-size: 30px;
 }
+.text12{
+    font-size: 30px;
+}
 
 @media (max-width: 1000px){
 
@@ -61,6 +72,9 @@ body {
     }
 
     .text1 {
+        font-size: 15px;
+    }
+    .text2 {
         font-size: 15px;
     }
     .mobile{
