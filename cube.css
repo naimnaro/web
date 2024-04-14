@@ -1,7 +1,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: black;
+    background-color: rgb(39, 39, 39);
 }
 
 #board {
@@ -35,6 +35,13 @@ body {
     width: 150px;
     height: 40px;
     margin: 5px;
+}
+
+.logo_img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    
 }
 
 #changeBtn {
