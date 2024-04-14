@@ -92,7 +92,7 @@ if (windowWidth < 1000) {
     spike3Width = 75;
     spikeHeight = 25;
     spikeY = boardHeight - spikeHeight;
-    jumpforce = -5;
+    jumpforce = -6;
     
 }
 
