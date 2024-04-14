@@ -234,6 +234,7 @@ function update() {
 
 function restartGame() {
     //bgm.currentTime = 0;
+    
     bgm.play();
     gameOver = false; // 게임 상태 초기화
     score = 0; // 점수 초기화
