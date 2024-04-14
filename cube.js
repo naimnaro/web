@@ -248,7 +248,7 @@ function restartGame() {
     spikeArray = []; // spike arrayreset 
     restartBtn.style.display = "none"; // hide restartBtn 
 
-    if (pc_state === true) {
+    if (pc_state === true) { 
         jumpBtn.style.display = "block";
     }
     else if (mobile_state === true) {
