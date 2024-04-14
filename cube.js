@@ -262,6 +262,7 @@ function moveDino(e) {
     if ((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY) {
         //jump
         velocityY = jumpforce;
+        jumpBtn.blur();
     }
 }
 
