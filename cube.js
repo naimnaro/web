@@ -9,32 +9,32 @@ let bgm;
 
 
 //dino
-let dinoWidth = 50;
-let dinoHeight = 50;
-let dinoX = 50;
-let dinoY = boardHeight - dinoHeight;
-let dinoImg;
-let dinoImg2;
+let cubeWidth = 50;
+let cubeHeight = 50;
+let cubeX = 50;
+let cubeY = boardHeight - cubeHeight;
+let cubeImg;
+let cubeImg2;
 
 
 
-//cactus
-let cactusArray = [];
+//spike
+let spikeArray = [];
 
-let cactus1Width = 50;
-let cactus2Width = 100;
-let cactus3Width = 150;
+let spike1Width = 50;
+let spike2Width = 100;
+let spike3Width = 150;
 
-let cactusHeight = 50;
-let cactusX = 1350;
-let cactusY = boardHeight - cactusHeight;
+let spikeHeight = 50;
+let spikeX = 1350;
+let spikeY = boardHeight - spikeHeight;
 
-let cactus1Img;
-let cactus2Img;
-let cactus3Img;
+let spike1Img;
+let spike2Img;
+let spike3Img;
 
 //physics
-let velocityX; //cactus moving left speed
+let velocityX; //spike moving left speed
 let velocityY = 0;
 let gravity = .2;
 
@@ -73,29 +73,29 @@ if (windowWidth < 1000) {
     console.log("PC 환경입니다.");
     boardWidth = 350;
     boardHeight = 300;
-    dinoWidth = 25;
-    dinoHeight = 25;
-    dinoX = 25;
-    dinoY = boardHeight - dinoHeight;
+    cubeWidth = 25;
+    cubeHeight = 25;
+    cubeX = 25;
+    cubeY = boardHeight - cubeHeight;
     gravity = .2;
 
 
 
 
-    cactus1Width = 25;
-    cactus2Width = 50;
-    cactus3Width = 75;
-    cactusHeight = 25;
-    cactusY = boardHeight - cactusHeight;
+    spike1Width = 25;
+    spike2Width = 50;
+    spike3Width = 75;
+    spikeHeight = 25;
+    spikeY = boardHeight - spikeHeight;
     jumpforce = -5;
     // PC 환경에서 실행할 코드를 여기에 추가
 }
 
-let dino = {
-    x: dinoX,
-    y: dinoY,
-    width: dinoWidth,
-    height: dinoHeight
+let cube = {
+    x: cubeX,
+    y: cubeY,
+    width: cubeWidth,
+    height: cubeHeight
 }
 
 window.onload = function () {
@@ -123,7 +123,7 @@ window.onload = function () {
 
     jumpBtn.addEventListener("mousedown", function () {
         
-        if (dino.y == dinoY) {
+        if (cube.y == cubeY) {
             // 점프
             velocityY = jumpforce;
         }
@@ -134,7 +134,7 @@ window.onload = function () {
 
     mobileBtn.addEventListener("mousedown", function () {
         
-        if (dino.y == dinoY) {
+        if (cube.y == cubeY) {
             // 점프
             velocityY = jumpforce;
         }
@@ -151,25 +151,25 @@ window.onload = function () {
 
 
     //draw initial dinosaur
-    dinoImg = new Image();
-    dinoImg.src = "./img/cube.png";
-    dinoImg.onload = function () {
-        context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
+    cubeImg = new Image();
+    cubeImg.src = "./img/cube.png";
+    cubeImg.onload = function () {
+        context.drawImage(cubeImg, cube.x, cube.y, cube.width, cube.height);
     }
 
 
-    cactus1Img = new Image();
-    cactus1Img.src = "./img/spike.png";
+    spike1Img = new Image();
+    spike1Img.src = "./img/spike.png";
 
-    cactus2Img = new Image();
-    cactus2Img.src = "./img/spike2.png";
+    spike2Img = new Image();
+    spike2Img.src = "./img/spike2.png";
 
-    cactus3Img = new Image();
-    cactus3Img.src = "./img/spike3.png";
+    spike3Img = new Image();
+    spike3Img.src = "./img/spike3.png";
 
     requestAnimationFrame(update);
-    setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
-    document.addEventListener("keydown", moveDino);
+    setInterval(placespike, 1000); //1000 milliseconds = 1 second
+    document.addEventListener("keydown", moveCube);
 
 
 
@@ -207,20 +207,20 @@ function update() {
 
     //dino
     velocityY += gravity;
-    dino.y = Math.min(dino.y + velocityY, dinoY); //apply gravity to current dino.y, making sure it doesn't exceed the ground
-    context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
+    cube.y = Math.min(cube.y + velocityY, cubeY); //apply gravity to current cube.y, making sure it doesn't exceed the ground
+    context.drawImage(cubeImg, cube.x, cube.y, cube.width, cube.height);
 
-    //cactus
-    for (let i = 0; i < cactusArray.length; i++) {
-        let cactus = cactusArray[i];
-        cactus.x += velocityX;
-        context.drawImage(cactus.img, cactus.x, cactus.y, cactus.width, cactus.height);
+    //spike
+    for (let i = 0; i < spikeArray.length; i++) {
+        let spike = spikeArray[i];
+        spike.x += velocityX;
+        context.drawImage(spike.img, spike.x, spike.y, spike.width, spike.height);
 
-        if (detectCollision(dino, cactus)) {
+        if (detectCollision(dino, spike)) {
             gameOver = true;
-            dinoImg.src = "./img/dino-dead.png";
-            dinoImg.onload = function () {
-                context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
+            cubeImg.src = "./img/dino-dead.png";
+            cubeImg.onload = function () {
+                context.drawImage(cubeImg, cube.x, cube.y, cube.width, cube.height);
             }
         }
     }
@@ -238,10 +238,10 @@ function restartGame() {
     bgm.play();
     gameOver = false; // 게임 상태 초기화
     score = 0; // 점수 초기화
-    dinoImg.src = skins[skinIndex]; // 다시 살아난 공룡 이미지로 변경
-    dino.y = dinoY; // 공룡 위치 초기화
+    cubeImg.src = skins[skinIndex]; // 다시 살아난 공룡 이미지로 변경
+    cube.y = cubeY; // 공룡 위치 초기화
     velocityY = -10; // 수직 속도 초기화
-    cactusArray = []; // 선인장 배열 초기화
+    spikeArray = []; // 선인장 배열 초기화
     restartBtn.style.display = "none"; // 재시작 버튼 숨기기
 
     if (pc_state === true) {
@@ -253,13 +253,13 @@ function restartGame() {
 
 
 }
-function moveDino(e) {
+function moveCube(e) {
 
     if (gameOver) {
         return;
     }
 
-    if ((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY) {
+    if ((e.code == "Space" || e.code == "ArrowUp") && cube.y == cubeY) {
         //jump
         velocityY = jumpforce;
         jumpBtn.blur();
@@ -267,40 +267,40 @@ function moveDino(e) {
 }
 
 
-function placeCactus() {
+function placespike() {
     if (gameOver) {
         return;
     }
 
-    //place cactus
-    let cactus = {
+    //place spike
+    let spike = {
         img: null,
-        x: cactusX,
-        y: cactusY,
+        x: spikeX,
+        y: spikeY,
         width: null,
-        height: cactusHeight
+        height: spikeHeight
     }
 
-    let placeCactusChance = Math.random(); //0 - 0.9999...
+    let placespikeChance = Math.random(); //0 - 0.9999...
 
-    if (placeCactusChance > .90) { //10% you get cactus3
-        cactus.img = cactus3Img;
-        cactus.width = cactus3Width;
-        cactusArray.push(cactus);
+    if (placespikeChance > .90) { //10% you get spike3
+        spike.img = spike3Img;
+        spike.width = spike3Width;
+        spikeArray.push(spike);
     }
-    else if (placeCactusChance > .70) { //30% you get cactus2
-        cactus.img = cactus2Img;
-        cactus.width = cactus2Width;
-        cactusArray.push(cactus);
+    else if (placespikeChance > .70) { //30% you get spike2
+        spike.img = spike2Img;
+        spike.width = spike2Width;
+        spikeArray.push(spike);
     }
-    else if (placeCactusChance > .50) { //50% you get cactus1
-        cactus.img = cactus1Img;
-        cactus.width = cactus1Width;
-        cactusArray.push(cactus);
+    else if (placespikeChance > .50) { //50% you get spike1
+        spike.img = spike1Img;
+        spike.width = spike1Width;
+        spikeArray.push(spike);
     }
 
-    if (cactusArray.length > 10) {
-        cactusArray.shift(); //remove the first element from the array so that the array doesn't constantly grow
+    if (spikeArray.length > 10) {
+        spikeArray.shift(); //remove the first element from the array so that the array doesn't constantly grow
     }
 }
 
@@ -315,8 +315,8 @@ function changeTheme() {
     console.log("changeTheme");
     // 현재 skinIndex를 증가시키고 배열 길이로 나눈 나머지를 새로운 skinIndex로 설정
     skinIndex = (skinIndex + 1) % skins.length;
-    // 선택된 스킨의 이미지 경로를 dinoImg에 할당
-    dinoImg.src = skins[skinIndex];
+    // 선택된 스킨의 이미지 경로를 cubeImg에 할당
+    cubeImg.src = skins[skinIndex];
     board.style.backgroundImage = `url('${bgs[skinIndex]}')`;
     context.fillStyle = textcolor[skinIndex];
 }
