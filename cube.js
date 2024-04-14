@@ -107,7 +107,7 @@ window.onload = function () {
 
 
     bgm = document.getElementById("bgm");
-    bgm.currentTime = 0;
+    
    
     restartBtn = document.getElementById("restartBtn"); 
     jumpBtn = document.getElementById("jumpBtn");
