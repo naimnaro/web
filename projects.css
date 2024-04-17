@@ -156,7 +156,7 @@ nav a:hover {
 .box_intro {
 
     width: 100%;
-    height: auto;
+    height: 3000px;
     display: grid;
     place-items: center;
     /* 수평, 수직 가운데 정렬 */
