@@ -171,7 +171,8 @@ nav a:hover {
 .b2,
 .b3,
 .b4,
-.b5 {
+.b5,
+.b6 {
 
     width: 92%;
     height: auto;
@@ -358,12 +359,37 @@ nav a:hover {
     text-align: left;
     /* 텍스트를 왼쪽 정렬로 설정 */
 }
+.b6 {
+    position: relative;
+    margin-bottom: 1%;
+    height: 80%;
+    width: 92%;
+    order: 5;
+    /* .b1을 2번째로 표시 */
+    border-radius: 0;
+    background-image: url("./images/cubegame.png");
+    background-size: cover;
+    transition: transform 0.3s ease;
+    
+
+}
+
+.content-area .b6 p {
+    font-size: 20px;
+    
+    margin-left: 30px;
+    margin-right: 30px;
+    /* 원하는 마진 값으로 조정 */
+    text-align: left;
+    /* 텍스트를 왼쪽 정렬로 설정 */
+}
 
 .b1:hover,
 .b2:hover,
 .b3:hover,
 .b4:hover,
-.b5:hover {
+.b5:hover,
+.b6:hover {
     /* 호버 효과 스타일을 여기에 작성합니다 */
     transform: scale(1.05);
 }
